@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "secondary": "#775928",
+              "surface": "#fff8f2",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              "primary-container": "#4a5d4e",
+              "on-primary-container": "#c0d5c2",
+              "surface-container": "#f4ede4",
+              "tertiary-container": "#4e5c50",
+              "inverse-surface": "#33302a",
+              "on-primary": "#ffffff",
+              "secondary-container": "#ffd79b",
+              "on-background": "#1e1b16",
+              "surface-tint": "#506354",
+              "surface-dim": "#e0d9d1",
+              "on-secondary-container": "#7a5c2b",
+              "on-surface": "#1e1b16",
+              "inverse-on-surface": "#f7f0e7",
+              "outline-variant": "#c3c8c1",
+              "on-tertiary-container": "#c4d4c4",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#fff8f2",
+              "on-tertiary-fixed": "#121e15",
+              "surface-container-highest": "#e9e1d9",
+              "surface-container-low": "#faf2ea",
+              "on-primary-fixed": "#0e1f13",
+              "secondary-fixed-dim": "#e8c086",
+              "primary-fixed-dim": "#b7ccb9",
+              "on-error-container": "#93000a",
+              "tertiary-fixed": "#d7e7d7",
+              "on-secondary-fixed-variant": "#5d4213",
+              "surface-variant": "#e9e1d9",
+              "on-primary-fixed-variant": "#394b3d",
+              "outline": "#737872",
+              "secondary-fixed": "#ffdeae",
+              "on-surface-variant": "#434843",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "background": "#fff8f2",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary": "#334537",
+              "surface-container-high": "#eee7df",
+              "primary-fixed": "#d3e8d5",
+              "on-tertiary-fixed-variant": "#3c4a3f",
+              "tertiary": "#374539",
+              "on-secondary-fixed": "#281800",
+              "inverse-primary": "#b7ccb9"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fff8f2; }
+        .editorial-shadow { box-shadow: 0 4px 32px rgba(30,27,22,0.04); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 backdrop-blur-xl shadow-[0_4px_32px_rgba(30,27,22,0.04)] h-16">
+<div class="flex items-center justify-between px-6 h-full max-w-screen-xl mx-auto">
+<button class="text-[#334537] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-tight text-lg text-[#334537]">我的收藏</h1>
+<button class="text-[#334537] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-screen-xl mx-auto">
+<!-- Editorial Header Section -->
+<section class="mb-10">
+<div class="flex items-baseline gap-2 mb-2">
+<h2 class="font-headline font-extrabold text-4xl tracking-tight text-primary">Inspiration</h2>
+<span class="text-secondary font-body italic">Lab.</span>
+</div>
+<p class="text-on-surface-variant font-body max-w-xs leading-relaxed opacity-80">
+                收录于 Tom's Garden 的每一个瞬间，都是通往自然生活的一扇窗。
+            </p>
+</section>
+<!-- Category Horizontal Scroll -->
+<nav class="flex overflow-x-auto pb-6 gap-3 no-scrollbar -mx-6 px-6">
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-primary text-on-primary font-medium text-sm shadow-md">全部</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-colors">园艺商品</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-colors">餐品</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-colors">活动</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-colors">案例</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-colors">服务</button>
+</nav>
+<!-- Bento Style Grid for Favorites -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+<!-- Favorite Item 1 (Product) -->
+<article class="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden group editorial-shadow transition-transform hover:-translate-y-1">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Greenery Plant" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a vibrant green ceramic plant pot with healthy monstera leaves in a bright sunlit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmlkhqkC37s8jRLQGt9mgKKtTr8uUy7kVzhJcdzKSzqKyDJalRlsl2LdFObLswon8au16QizJTQQSm0MSOU56uFZU63SHvG3y171bA5yA-BEv009jjlcxPeDfTYz6FmBd1W_xJcBy_zdkKcWciwOOk3XOMVhctmGcCyLFBlOCeYaSDH_51AqZDqwkE5rMIqDB9ATwubamf9Hpb6AvBaFgb2XUUTSFa0vk_o8KJuXmGO_pHrKp1zkWBIbEZGBtaqnLc5NM1X3TC66wj"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-md p-2 rounded-full text-secondary">
+<span class="material-symbols-outlined fill-1" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">In Stock</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline font-bold text-xl text-primary mb-1">复古陶土植土盆</h3>
+<p class="text-on-surface-variant text-sm mb-4 font-body">甄选意大利红陶，透气排水，为植物根系提供呼吸感。</p>
+<div class="flex items-center justify-between">
+<span class="text-secondary font-bold text-lg">¥ 189.00</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 group/btn">
+                            View Details 
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Favorite Item 2 (Activity) -->
+<article class="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden group editorial-shadow transition-transform hover:-translate-y-1">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Workshop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisan workspace with dried flowers and wooden tools, soft diffused natural morning light coming through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEBMXGbHv27_zfnlDdPwyJG7DTHPQZ2fuy23pU3Pj8ACAWN0Nd062E5OSC-ReEycj-W_XKxntJ5dqqlnUHJzTxt9LNglYAIaELk2x3WfslxSu6WLDPuGW9eIIFw1F4tMDgFyRGBQlP-5SP69_qHgRK5liX5XVTZPLfj6xTMSK_wAlhFIHdNxrVAfJqxET-5P2Ulm6F66v6bvk0JeIN9QnyHKGanEs8McTKGFYQhU0ADNCTAgDrkD8f72B21rD81tP7Ci2eC0-4F9X2"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-md p-2 rounded-full text-secondary">
+<span class="material-symbols-outlined fill-1" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full tracking-wider uppercase">Workshop</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline font-bold text-xl text-primary mb-1">周末：押花艺术工作坊</h3>
+<p class="text-on-surface-variant text-sm mb-4 font-body">由资深花艺师带教，学习如何保存大自然的四季流转。</p>
+<div class="flex items-center justify-between">
+<span class="text-secondary font-bold text-lg">¥ 399.00</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 group/btn">
+                            View Details 
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Favorite Item 3 (Food) -->
+<article class="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden group editorial-shadow transition-transform hover:-translate-y-1">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Healthy Salad" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Exquisite organic garden salad served on a textured white ceramic plate, colorful edible flowers and greens, overhead shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrcYYDYk-zXpaNe9cz1tMwP_Q9tKH425a7fGub0xXkCBfGd34GPTmBLfJ83kROEpXPbVx_pnq7nbOoverstTIOE9gew_cJsWrFDsDNgxjq0trbiBNJirpZZip4B7YmZ4az7LEpkDrRfEPoixGkmi-3CeICK06I7nk72io32VLILeE33s0JEfOht-u8YznIpYD5wTisbwqoRDBogsljJbzW5UjQJHpk69WlpS4JMJ91LPfkZ6-r3mLYwZhbpcvxGml0il0Ttt7YyDO9"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-md p-2 rounded-full text-secondary">
+<span class="material-symbols-outlined fill-1" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline font-bold text-xl text-primary mb-1">清晨花园有机沙拉</h3>
+<p class="text-on-surface-variant text-sm mb-4 font-body">每日晨间从实验室花园直采，配以特调百香果油醋汁。</p>
+<div class="flex items-center justify-between">
+<span class="text-secondary font-bold text-lg">¥ 68.00</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1 group/btn">
+                            View Details 
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State (Hidden if content exists, visible if no content) -->
+<div class="hidden flex-col items-center justify-center py-24 text-center">
+<div class="w-24 h-24 bg-surface-container-low rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-5xl text-outline-variant" data-icon="potted_plant">potted_plant</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-primary mb-2">您的花园灵感集还空着</h3>
+<p class="text-on-surface-variant font-body mb-8">去逛逛吧，为您的生活添一点绿意。</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold text-sm tracking-wide shadow-lg active:scale-95 transition-transform">探索灵感</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full rounded-t-[1.5rem] z-50 pb-safe bg-[#fff8f2]/90 dark:bg-[#1e1b16]/90 backdrop-blur-xl shadow-[0_-4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex justify-around items-center h-20 px-4 w-full">
+<button class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">home_growth</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">首页</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">商城</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">活动</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537] dark:text-[#ffd79b] bg-[#4a5d4e]/10 dark:bg-[#ffd79b]/10 rounded-xl px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">我的</span>
+</button>
+</div>
+</nav>
+</body></html>

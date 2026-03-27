@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>汤姆的花园生活馆 - 养护预约</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Source+Han+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#fcf9ef",
+                        "tertiary-fixed": "#e5e2e1",
+                        "surface-dim": "#dcdad1",
+                        "surface-container": "#f0eee4",
+                        "on-background": "#1b1c16",
+                        "inverse-primary": "#f9bd14",
+                        "secondary": "#54634d",
+                        "surface-container-low": "#f6f4ea",
+                        "on-error": "#ffffff",
+                        "tertiary": "#5f5e5e",
+                        "primary": "#785900",
+                        "on-primary-fixed": "#251a00",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#d3c5ac",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#644a00",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "primary-fixed": "#ffdf9d",
+                        "primary-fixed-dim": "#f9bd14",
+                        "on-secondary-container": "#5a6952",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fcf9ef",
+                        "on-surface": "#1b1c16",
+                        "primary-container": "#f2b705",
+                        "tertiary-container": "#c2c0bf",
+                        "secondary-container": "#d7e8cc",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface-variant": "#e4e3d9",
+                        "surface-container-highest": "#e4e3d9",
+                        "inverse-on-surface": "#f3f1e7",
+                        "on-primary-fixed-variant": "#5b4300",
+                        "on-surface-variant": "#4f4633",
+                        "on-secondary-fixed": "#121f0e",
+                        "inverse-surface": "#30312a",
+                        "surface-tint": "#785900",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary-fixed-dim": "#bbcbb1",
+                        "secondary-fixed": "#d7e8cc",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#817660",
+                        "surface-bright": "#fcf9ef",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#eae8de",
+                        "on-tertiary-container": "#4f4e4e",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#3d4b36"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "Source Han Sans"],
+                        "body": ["Manrope", "Source Han Sans"],
+                        "label": ["Manrope", "Source Han Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fcf9ef;
+            font-family: 'Source Han Sans', sans-serif;
+            color: #1b1c16;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-bottom: 2px solid #785900 !important;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d3c5ac;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#FCF9EF] dark:bg-stone-900">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#785900] dark:text-[#F2B705] cursor-pointer active:opacity-70 duration-200" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-['Source_Han_Sans'] font-bold text-lg tracking-tight text-[#1B1C16] dark:text-[#FCF9EF]">养护预约</h1>
+</div>
+<div class="w-6"></div> <!-- Spacer for centering title if needed -->
+</div>
+<div class="bg-[#F6F4EA] dark:bg-stone-800 h-px w-full"></div>
+</nav>
+<main class="mt-20 px-5 pb-32 max-w-lg mx-auto w-full space-y-10">
+<!-- Hero Section -->
+<section class="pt-4 space-y-4">
+<h2 class="text-3xl font-bold text-on-background leading-tight tracking-tight">
+                养护预约 | <span class="text-primary">需求填写</span>
+</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                请先留下您的空间情况和养护需求，我们会根据您的内容给出更适合的建议。
+            </p>
+<div class="relative h-48 w-full rounded-xl overflow-hidden mt-6">
+<img alt="Garden Maintenance" class="w-full h-full object-cover" data-alt="Close-up of lush green indoor plants in a sunlit modern balcony setting with warm natural lighting and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbWVEx6dz3B-8zD1yn2EqyLrPlT03BggAxdo2Bd9ei2o9H76y0B6xGUWEdNXmK-v-um5By9vcObp8J0Q0pApT99OiiLQkRhx3iWILKbNGhDJKQue3-48FC05OnlYok9J5DnoeXxWhtModjk7RpE9L1EhU3yJUXLwXq3rQ5LkDRuftLhoTuuIUzVBDUOQAA6IEqUeQ4WuBSsrsa-TGzv6Pv6-wkblRUtUrz8-kYa63t2l7ahPXm0LEl2EILooRfAzii-r1lvPv9gw_G"/>
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary-fixed text-[10px] font-extrabold px-3 py-1 rounded-md tracking-wider">
+                    TOM'S GARDEN LAB
+                </div>
+</div>
+</section>
+<!-- Card Group 1: 客户基本信息 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-primary rounded-full"></div>
+<h3 class="text-lg font-bold">客户基本信息</h3>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-6">
+<div class="grid grid-cols-1 gap-6">
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">姓名</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40 transition-all" placeholder="请输入您的姓名" type="text"/>
+</div>
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">手机号</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40 transition-all" placeholder="请输入手机号码" type="tel"/>
+</div>
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">微信号</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40 transition-all" placeholder="方便添加沟通需求" type="text"/>
+</div>
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">所在城市</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40 transition-all" placeholder="例：成都市" type="text"/>
+</div>
+</div>
+<div class="space-y-3">
+<label class="text-xs font-bold text-on-surface-variant">客户身份</label>
+<div class="flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
+<button class="shrink-0 px-4 py-2 rounded-full bg-primary-container text-on-primary-container text-sm font-semibold transition-all">家庭客户</button>
+<button class="shrink-0 px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold transition-all">商业客户</button>
+<button class="shrink-0 px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold transition-all">幼儿园客户</button>
+<button class="shrink-0 px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-semibold transition-all">其他</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Card Group 2: 空间基础信息 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-secondary rounded-full"></div>
+<h3 class="text-lg font-bold">空间基础信息</h3>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-6">
+<div class="grid grid-cols-1 gap-6">
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">空间名称</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40 transition-all" placeholder="如：阳光露台 / 前院" type="text"/>
+</div>
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">空间类型</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface appearance-none">
+<option>家庭阳台</option>
+<option>家庭庭院</option>
+<option>露台</option>
+<option>商业空间</option>
+<option>幼儿园种植园</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-3 text-on-surface-variant pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">空间面积</label>
+<div class="flex items-center border-b border-outline-variant">
+<input class="w-full bg-transparent border-0 py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40" placeholder="面积" type="number"/>
+<span class="text-sm font-bold text-on-surface ml-1">m²</span>
+</div>
+</div>
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">植物数量</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40" placeholder="约多少株" type="number"/>
+</div>
+</div>
+<div class="relative group">
+<label class="text-xs font-bold text-on-surface-variant mb-1 block">项目地址</label>
+<div class="flex items-center">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-2 px-0 text-on-surface placeholder:text-on-surface-variant/40" placeholder="详细街道或小区名称" type="text"/>
+<span class="material-symbols-outlined text-primary mb-1 ml-2" data-icon="location_on">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Card Group 3: 养护需求类型 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-primary rounded-full"></div>
+<h3 class="text-lg font-bold">养护服务类型</h3>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-highest border-2 border-primary group transition-all">
+<div class="flex justify-between items-start mb-2">
+<span class="text-sm font-bold text-primary px-2 py-1 bg-white/50 rounded">PREMIUM</span>
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h4 class="text-xl font-bold mb-1">常规养护服务</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">提供修剪、施肥、病虫害防治等周期性专业上门服务。</p>
+</div>
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-low transition-all">
+<h4 class="text-xl font-bold mb-1">幼儿园专项套餐</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">针对教育空间设计的寓教于乐型养护方案，环保安全。</p>
+</div>
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-low transition-all">
+<h4 class="text-xl font-bold mb-1">绿里轻养护</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">精简、高效，适合小型阳台及新手居家环境的基础护理。</p>
+</div>
+</div>
+</section>
+<!-- Card Group 4: 需求了解 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-secondary rounded-full"></div>
+<h3 class="text-lg font-bold">需求深度了解</h3>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-6">
+<div class="space-y-3">
+<label class="text-xs font-bold text-on-surface-variant block">目前最想解决的问题/现状</label>
+<textarea class="w-full bg-surface-container-lowest rounded-lg border-0 p-4 text-sm text-on-surface placeholder:text-on-surface-variant/40 resize-none" placeholder="例如：植物大面积枯黄、虫害严重、想调整布局等..." rows="4"></textarea>
+</div>
+<div class="space-y-3">
+<label class="text-xs font-bold text-on-surface-variant">更在意的方向 (多选)</label>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-fixed text-xs font-bold border border-secondary/20">整洁</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant text-xs font-bold border border-outline-variant/30">安全</button>
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-fixed text-xs font-bold border border-secondary/20">植物状态</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant text-xs font-bold border border-outline-variant/30">持续维护</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant text-xs font-bold border border-outline-variant/30">形象提升</button>
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-fixed text-xs font-bold border border-secondary/20">省心</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Card Group 5: 预算与频次 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-primary rounded-full"></div>
+<h3 class="text-lg font-bold">预算与频次</h3>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-8">
+<div class="space-y-4">
+<div class="flex justify-between">
+<label class="text-xs font-bold text-on-surface-variant">单次预算范围</label>
+<span class="text-xs font-bold text-primary">¥500 - ¥2000</span>
+</div>
+<input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex justify-between text-[10px] text-on-surface-variant/60 font-medium">
+<span>¥200</span>
+<span>¥5000+</span>
+</div>
+</div>
+<div class="space-y-3">
+<label class="text-xs font-bold text-on-surface-variant">希望养护频次</label>
+<div class="grid grid-cols-2 gap-3">
+<label class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/20 cursor-pointer">
+<input checked="" class="text-primary focus:ring-primary w-4 h-4" name="freq" type="radio"/>
+<span class="text-sm font-semibold">每周一次</span>
+</label>
+<label class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/20 cursor-pointer">
+<input class="text-primary focus:ring-primary w-4 h-4" name="freq" type="radio"/>
+<span class="text-sm font-semibold">半月一次</span>
+</label>
+<label class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/20 cursor-pointer">
+<input class="text-primary focus:ring-primary w-4 h-4" name="freq" type="radio"/>
+<span class="text-sm font-semibold">每月一次</span>
+</label>
+<label class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/20 cursor-pointer">
+<input class="text-primary focus:ring-primary w-4 h-4" name="freq" type="radio"/>
+<span class="text-sm font-semibold">定制频次</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Card Group 6: 上传资料 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-secondary rounded-full"></div>
+<h3 class="text-lg font-bold">资料上传</h3>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/40 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary mb-2" data-icon="add_a_photo">add_a_photo</span>
+<span class="text-[10px] font-bold text-on-surface-variant">现场照片</span>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/40 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary mb-2" data-icon="architecture">architecture</span>
+<span class="text-[10px] font-bold text-on-surface-variant">平面图</span>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/40 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary mb-2" data-icon="potted_plant">potted_plant</span>
+<span class="text-[10px] font-bold text-on-surface-variant">植物现状</span>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/40 hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary mb-2" data-icon="collections">collections</span>
+<span class="text-[10px] font-bold text-on-surface-variant">参考图</span>
+</div>
+</div>
+</section>
+<!-- Card Group 7: 沟通偏好 -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1.5 h-6 bg-primary rounded-full"></div>
+<h3 class="text-lg font-bold">期望沟通方式</h3>
+</div>
+<div class="flex justify-around bg-surface-container-low rounded-xl p-6">
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</div>
+<span class="text-[10px] font-bold">微信</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-40">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<span class="text-[10px] font-bold">电话</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-40">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</div>
+<span class="text-[10px] font-bold">面谈</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-40">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="videocam">videocam</span>
+</div>
+<span class="text-[10px] font-bold">视频</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 left-0 right-0 bg-surface/80 backdrop-blur-xl border-t border-outline-variant/10 p-6 z-50">
+<div class="max-w-lg mx-auto">
+<button class="w-full h-14 bg-secondary text-white rounded-full font-bold text-lg flex items-center justify-center gap-2 shadow-xl shadow-secondary/20 active:scale-95 transition-transform">
+<span>提交养护需求</span>
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</footer>
+</body></html>

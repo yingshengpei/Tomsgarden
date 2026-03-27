@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#ffd79b",
+              "inverse-on-surface": "#f7f0e7",
+              "surface-container-high": "#eee7df",
+              "on-secondary-fixed-variant": "#5d4213",
+              "on-surface-variant": "#434843",
+              "on-background": "#1e1b16",
+              "on-error": "#ffffff",
+              "on-primary-container": "#c0d5c2",
+              "outline": "#737872",
+              "on-tertiary-fixed-variant": "#3c4a3f",
+              "primary-fixed": "#d3e8d5",
+              "inverse-primary": "#b7ccb9",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#e8c086",
+              "on-primary-fixed-variant": "#394b3d",
+              "background": "#fff8f2",
+              "tertiary": "#374539",
+              "surface-container-highest": "#e9e1d9",
+              "primary": "#334537",
+              "surface-container-lowest": "#ffffff",
+              "surface": "#fff8f2",
+              "primary-fixed-dim": "#b7ccb9",
+              "surface-container": "#f4ede4",
+              "secondary-fixed": "#ffdeae",
+              "tertiary-fixed": "#d7e7d7",
+              "on-tertiary-container": "#c4d4c4",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e9e1d9",
+              "surface-container-low": "#faf2ea",
+              "tertiary-container": "#4e5c50",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-surface": "#33302a",
+              "surface-bright": "#fff8f2",
+              "on-primary-fixed": "#0e1f13",
+              "outline-variant": "#c3c8c1",
+              "on-secondary-fixed": "#281800",
+              "surface-tint": "#506354",
+              "surface-dim": "#e0d9d1",
+              "primary-container": "#4a5d4e",
+              "on-surface": "#1e1b16",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed": "#121e15",
+              "secondary": "#775928",
+              "on-secondary-container": "#7a5c2b"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', "Source Han Sans CN", "Source Han Sans", sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(30, 27, 22, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-[#fff8f2] dark:bg-stone-950 flex items-center px-4 h-16 w-full">
+<div class="flex items-center w-full">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#334537] dark:text-[#ebf2ec] text-2xl">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-wide text-[#334537] dark:text-[#ebf2ec] ml-4">Activity Details</h1>
+</div>
+</header>
+<main class="pb-32">
+<!-- Hero Section -->
+<section class="relative h-[574px] overflow-hidden">
+<img alt="Botanical Event" class="w-full h-full object-cover" data-alt="Close-up of a rustic wooden table with wild flowers, soft string lights, and parent-child hands crafting botanical art in a lush forest garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsEmZfCzHvZjjPO1R33j9SJTHG3W1QSRKN71EYc4NmnjSliXe4BtuHcBDRiSIM2UEhO88iidAgcXBN6oG_Ol_z-0-wI_OUUB2cTxcWjjJ-7KzIMsCDWCLUXty5kaynwgoSncxQ4U67pVCckNuxlA1NdUaNYOSF9LE5eKX78poacmNSBYir6iCrd4J8jqEDXQH_WyOrp28PnVHq8KqZQfpMzTyjFkusbnNOv2beLPabdDl9504JLtOQgqfgWJ_ddTTjKmv93ng5a2Ph"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="inline-block bg-secondary-container text-on-secondary-container text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-[0.15em] mb-4">
+                    SUMMER SERIES
+                </span>
+<h2 class="font-headline font-extrabold text-4xl leading-[1.1] tracking-tight text-primary drop-shadow-sm">
+                    仲夏夜之梦：<br/>森林露天音乐晚宴
+                </h2>
+</div>
+</section>
+<!-- Basic Info Cards -->
+<section class="px-6 -mt-4 relative z-10">
+<div class="bg-surface-container-lowest rounded-xl p-6 editorial-shadow border border-outline-variant/10 grid grid-cols-2 gap-y-6 gap-x-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">calendar_today</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Date</p>
+<p class="text-sm font-semibold text-on-surface">10月21日</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">schedule</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Time</p>
+<p class="text-sm font-semibold text-on-surface">19:30-21:30</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">groups</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Ages</p>
+<p class="text-sm font-semibold text-on-surface">3-12岁亲子</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">hourglass_empty</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Duration</p>
+<p class="text-sm font-semibold text-on-surface">2小时</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Activity Introduction -->
+<section class="px-6 mt-10">
+<div class="flex items-baseline gap-2 mb-4">
+<div class="w-8 h-[1px] bg-secondary/30"></div>
+<h3 class="font-headline font-bold text-primary text-sm uppercase tracking-[0.2em]">The Experience</h3>
+</div>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant italic">
+                “在星空坠落的森林里，听见植物的呼吸。” 
+                这场专为家庭定制的晚宴，将带你逃离都市，步入Tom的秘密实验室。在这里，音乐不是表演，而是自然的回响；食物不是套餐，而是大地的馈赠。
+            </p>
+</section>
+<!-- Highlights Grid (Bento Style) -->
+<section class="px-6 mt-12">
+<h3 class="font-headline font-bold text-primary text-xl mb-6">Activity Highlights</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-5 rounded-xl flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">music_note</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">森林里的交响乐</h4>
+<p class="text-xs text-on-surface-variant leading-tight">沉浸式自然声学体验</p>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-5 rounded-xl flex flex-col justify-between aspect-[4/5] row-span-2">
+<span class="material-symbols-outlined text-primary-fixed text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<div>
+<h4 class="font-bold text-on-primary mb-2">草地星空晚餐</h4>
+<p class="text-sm text-on-primary/80 leading-relaxed">主厨定制有机时蔬与野餐篮，在萤火虫陪伴下共进晚餐。</p>
+</div>
+</div>
+<div class="bg-secondary-container p-5 rounded-xl flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-secondary text-3xl">brush</span>
+<div>
+<h4 class="font-bold text-on-secondary-container mb-1">手作自然面具</h4>
+<p class="text-xs text-on-secondary-container/80 leading-tight">利用落叶与枯枝创作</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Important Notes -->
+<section class="mt-12 mx-6 p-6 bg-surface-container-high rounded-xl">
+<h3 class="font-headline font-bold text-primary text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">info</span> Essential Details
+            </h3>
+<ul class="space-y-4">
+<li class="flex gap-4">
+<span class="text-secondary font-bold text-xs mt-1">01</span>
+<div>
+<h5 class="text-sm font-bold text-on-surface mb-1">Cancellation Policy</h5>
+<p class="text-xs text-on-surface-variant">提前48小时取消可全额退款，24小时内扣除50%违约金。</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-bold text-xs mt-1">02</span>
+<div>
+<h5 class="text-sm font-bold text-on-surface mb-1">Arrival Time</h5>
+<p class="text-xs text-on-surface-variant">请于活动开始前15分钟到达Living Lab入口处签到。</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-bold text-xs mt-1">03</span>
+<div>
+<h5 class="text-sm font-bold text-on-surface mb-1">Preparation</h5>
+<p class="text-xs text-on-surface-variant">建议穿着舒适户外服装，实验室将提供防蚊喷雾与雨具备用。</p>
+</div>
+</li>
+</ul>
+</section>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="fixed bottom-0 left-0 w-full z-50 bg-[#fff8f2]/80 backdrop-blur-xl px-6 pb-safe h-24 flex items-center justify-between border-t border-outline-variant/15 shadow-[0_-4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex flex-col">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest">Total Price</p>
+<div class="flex items-baseline">
+<span class="text-secondary font-bold text-sm mr-1">¥</span>
+<span class="text-2xl font-bold text-primary">168</span>
+<span class="text-xs text-on-surface-variant ml-1">/人</span>
+</div>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide active:scale-95 transition-transform duration-200 shadow-lg shadow-primary/20">
+            立即预约报名
+        </button>
+</footer>
+</body></html>

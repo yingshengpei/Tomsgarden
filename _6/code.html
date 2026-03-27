@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tom's Garden - Living Lab Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error": "#ffffff",
+                        "background": "#fff8f2",
+                        "error-container": "#ffdad6",
+                        "primary": "#334537",
+                        "tertiary": "#374539",
+                        "surface-container-high": "#eee7df",
+                        "primary-fixed": "#d3e8d5",
+                        "on-tertiary-fixed-variant": "#3c4a3f",
+                        "on-secondary-fixed": "#281800",
+                        "inverse-primary": "#b7ccb9",
+                        "secondary-fixed-dim": "#e8c086",
+                        "primary-fixed-dim": "#b7ccb9",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#faf2ea",
+                        "on-primary-fixed": "#0e1f13",
+                        "tertiary-fixed": "#d7e7d7",
+                        "on-secondary-fixed-variant": "#5d4213",
+                        "surface-variant": "#e9e1d9",
+                        "outline": "#737872",
+                        "on-primary-fixed-variant": "#394b3d",
+                        "secondary-fixed": "#ffdeae",
+                        "on-surface-variant": "#434843",
+                        "tertiary-fixed-dim": "#bbcbbb",
+                        "on-background": "#1e1b16",
+                        "surface-tint": "#506354",
+                        "surface-dim": "#e0d9d1",
+                        "on-secondary-container": "#7a5c2b",
+                        "on-surface": "#1e1b16",
+                        "inverse-on-surface": "#f7f0e7",
+                        "on-tertiary-container": "#c4d4c4",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c8c1",
+                        "on-tertiary-fixed": "#121e15",
+                        "surface-bright": "#fff8f2",
+                        "surface-container-highest": "#e9e1d9",
+                        "error": "#ba1a1a",
+                        "surface": "#fff8f2",
+                        "secondary": "#775928",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#f4ede4",
+                        "primary-container": "#4a5d4e",
+                        "on-primary-container": "#c0d5c2",
+                        "tertiary-container": "#4e5c50",
+                        "inverse-surface": "#33302a",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#ffd79b"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "Noto Sans SC"],
+                        "body": ["Plus Jakarta Sans", "Noto Sans SC"],
+                        "label": ["Plus Jakarta Sans", "Noto Sans SC"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .textured-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(51, 69, 55, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .soft-card-shadow {
+            box-shadow: 0 4px 20px rgba(51, 69, 55, 0.04);
+        }
+        /* Custom Font Override */
+        body {
+            font-family: "Noto Sans SC", "Plus Jakarta Sans", sans-serif;
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+<!-- TopAppBar (Background Content) -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 backdrop-blur-xl shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-screen-xl mx-auto">
+<button class="text-[#334537]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-['Manrope'] font-extrabold text-[#334537] tracking-widest uppercase text-sm">Tom's Garden</h1>
+<div class="w-6"></div>
+</div>
+</header>
+<!-- Side Drawer Overlay -->
+<div class="fixed inset-0 z-[60] flex">
+<!-- Main Drawer Panel -->
+<aside class="w-[85vw] max-w-[360px] h-full bg-surface-container-low textured-bg relative overflow-hidden flex flex-col shadow-2xl">
+<!-- Top User Section -->
+<div class="p-8 pb-6 pt-12 relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img alt="User Avatar" class="w-14 h-14 rounded-full border-2 border-white shadow-sm object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMgEUPGtWcnnORw_qIiPd2X3pvfYu_TTFVR2u0kZAbhU-TWI05LvTR6Rh2TecEHNQwJONOfQQeymNPYPEisvaeW3kzAW8OG6z54-AhmD2q_rDEzusn0dtgx3dy07013jMTPdeuQcip4k1XnurXMldYyRmJvOyXFL_3DEq-MXgVfTWxIkHrBPrZppY9qFTFmpNPrXpQ_atRZGh988a8NkVOLX4vjCXRtKom7qjQakBo0Twi7__2XdRqLqJkMGrKAr-UY9c79fXWbmPe"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-[#775928] border-2 border-surface-container-low rounded-full"></div>
+</div>
+<div>
+<h2 class="font-headline font-bold text-lg text-primary leading-none">汤姆先生</h2>
+<p class="text-primary/60 text-xs mt-1">Welcome to the Garden</p>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary/40">close</span>
+</button>
+</div>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto px-6 space-y-8 pb-10">
+<!-- Group 1: Quick Functions -->
+<section>
+<h3 class="px-2 mb-4 text-[10px] font-bold text-primary/40 tracking-[0.2em] uppercase">快捷功能 Quick Functions</h3>
+<div class="grid grid-cols-3 gap-3">
+<a class="bg-white/50 backdrop-blur-sm p-3 rounded-2xl flex flex-col items-center justify-center text-center soft-card-shadow active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-2">restaurant</span>
+<span class="text-[11px] font-medium text-primary/80">订位用餐</span>
+</a>
+<a class="bg-white/50 backdrop-blur-sm p-3 rounded-2xl flex flex-col items-center justify-center text-center soft-card-shadow active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-2">menu_book</span>
+<span class="text-[11px] font-medium text-primary/80">菜单</span>
+</a>
+<a class="bg-white/50 backdrop-blur-sm p-3 rounded-2xl flex flex-col items-center justify-center text-center soft-card-shadow active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-2">shopping_cart</span>
+<span class="text-[11px] font-medium text-primary/80">购物车</span>
+</a>
+<a class="bg-white/50 backdrop-blur-sm p-3 rounded-2xl flex flex-col items-center justify-center text-center soft-card-shadow active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-2">favorite</span>
+<span class="text-[11px] font-medium text-primary/80">收藏</span>
+</a>
+<a class="bg-white/50 backdrop-blur-sm p-3 rounded-2xl flex flex-col items-center justify-center text-center soft-card-shadow active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-2">list_alt</span>
+<span class="text-[11px] font-medium text-primary/80">我的订单</span>
+</a>
+<a class="bg-white/50 backdrop-blur-sm p-3 rounded-2xl flex flex-col items-center justify-center text-center soft-card-shadow active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary mb-2">confirmation_number</span>
+<span class="text-[11px] font-medium text-primary/80">我的优惠券</span>
+</a>
+</div>
+</section>
+<!-- Group 2: Design & Services -->
+<section>
+<h3 class="px-2 mb-4 text-[10px] font-bold text-primary/40 tracking-[0.2em] uppercase">设计与服务 Services</h3>
+<div class="space-y-3">
+<a class="flex items-center gap-4 p-4 bg-white/50 rounded-2xl soft-card-shadow active:scale-[0.98] transition-all" href="#">
+<div class="w-10 h-10 bg-primary/5 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">architecture</span>
+</div>
+<span class="flex-1 font-medium text-sm text-primary">设计咨询</span>
+<span class="material-symbols-outlined text-primary/20 text-lg">chevron_right</span>
+</a>
+<!-- Highlighted Item: Tom's Children -->
+<a class="flex items-center gap-4 p-4 bg-secondary-container rounded-2xl soft-card-shadow active:scale-[0.98] transition-all" href="#">
+<div class="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-xl" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+<div class="flex-1">
+<span class="block font-bold text-sm text-on-secondary-container">汤姆儿童｜七大空间</span>
+<span class="block text-[10px] text-on-secondary-container/60">Creative Growth Lab</span>
+</div>
+<div class="px-2 py-0.5 bg-primary text-white text-[9px] rounded-full font-bold uppercase tracking-wider">NEW</div>
+</a>
+<a class="flex items-center gap-4 p-4 bg-white/50 rounded-2xl soft-card-shadow active:scale-[0.98] transition-all" href="#">
+<div class="w-10 h-10 bg-primary/5 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">potted_plant</span>
+</div>
+<span class="flex-1 font-medium text-sm text-primary">绿里养护</span>
+<span class="material-symbols-outlined text-primary/20 text-lg">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 p-4 bg-white/50 rounded-2xl soft-card-shadow active:scale-[0.98] transition-all" href="#">
+<div class="w-10 h-10 bg-primary/5 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">headset_mic</span>
+</div>
+<span class="flex-1 font-medium text-sm text-primary">在线客服</span>
+<span class="material-symbols-outlined text-primary/20 text-lg">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 p-4 bg-white/50 rounded-2xl soft-card-shadow active:scale-[0.98] transition-all" href="#">
+<div class="w-10 h-10 bg-primary/5 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">near_me</span>
+</div>
+<span class="flex-1 font-medium text-sm text-primary">门店导航</span>
+<span class="material-symbols-outlined text-primary/20 text-lg">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Group 3: Auxiliary -->
+<section>
+<h3 class="px-2 mb-4 text-[10px] font-bold text-primary/40 tracking-[0.2em] uppercase">辅助入口 Auxiliary</h3>
+<div class="flex gap-4">
+<a class="flex-1 flex items-center justify-center gap-2 p-4 bg-surface-container-high/40 rounded-2xl border border-primary/5 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-lg">gallery_thumbnail</span>
+<span class="text-xs font-medium text-primary">空间展示</span>
+</a>
+<a class="flex-1 flex items-center justify-center gap-2 p-4 bg-surface-container-high/40 rounded-2xl border border-primary/5 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-lg">rate_review</span>
+<span class="text-xs font-medium text-primary">意见反馈</span>
+</a>
+</div>
+</section>
+</div>
+<!-- Footer / Membership Indicator -->
+<div class="px-8 py-6 bg-primary/5 border-t border-primary/5">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] font-bold text-primary/40 uppercase tracking-widest">Level 4 Member</span>
+<span class="text-[10px] font-bold text-primary">1240 pts</span>
+</div>
+<div class="h-1 w-full bg-white rounded-full overflow-hidden">
+<div class="h-full w-3/4 bg-primary rounded-full"></div>
+</div>
+</div>
+</aside>
+<!-- Backdrop Overlay -->
+<div class="flex-1 bg-on-surface/30 backdrop-blur-[1px]"></div>
+</div>
+<!-- Background Content Placeholder -->
+<main class="pt-24 px-6 max-w-screen-xl mx-auto">
+<section class="mb-12">
+<div class="relative h-[400px] rounded-[2.5rem] overflow-hidden">
+<img alt="Botanical Garden" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_JGVqL0QIoTiiOv2Zlj6F8OIJKCUBiwCpzJ2fdLQDqh6dBr2JgCdpjaJuJR2tUSXFEc1_OI4DatVZIumq2LZQjW3iI_n0o5X4JEJ38f9v7BY0-yFzSyPzc2Ao8y-oRdGYk6vxTZ3YKkNAdQql3dM5jX-Bs9CfykbTjAUIgXrdmUy2r3K5QiZq6RQd25Pc1VrlzfarVugwaz-Mp-JX0z_2xYYEHZKjXneLMEHs81wLs2u713PeX6Vk7jcbu1HkSaHXsHdpz0xg66n3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full mb-3 tracking-widest uppercase">Seasonal Special</span>
+<h3 class="text-white font-headline font-extrabold text-4xl leading-tight">仲夏夜之梦<br/>新品植物赏</h3>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-2 gap-6 mb-32">
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">psychiatry</span>
+</div>
+<h4 class="font-headline font-bold text-primary">种子计划</h4>
+<p class="text-xs text-primary/60 mt-1">认养你的第一株绿植</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary text-3xl">menu_book</span>
+</div>
+<h4 class="font-headline font-bold text-primary">园艺手册</h4>
+<p class="text-xs text-primary/60 mt-1">科学养护进阶指南</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[2.5rem] bg-[#fff8f2]/90 backdrop-blur-2xl shadow-[0_-8px_40px_rgba(30,27,22,0.03)] flex justify-around items-center px-4 pb-8 pt-4">
+<button class="flex flex-col items-center justify-center text-[#334537] font-bold bg-[#faf2ea] rounded-full px-5 py-1.5 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-medium text-[11px] mt-1">首页</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/50 px-5 py-1.5">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-medium text-[11px] mt-1">商城</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/50 px-5 py-1.5">
+<span class="material-symbols-outlined">event_note</span>
+<span class="font-medium text-[11px] mt-1">活动</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/50 px-5 py-1.5">
+<span class="material-symbols-outlined">person_2</span>
+<span class="font-medium text-[11px] mt-1">我的</span>
+</button>
+</nav>
+</body></html>

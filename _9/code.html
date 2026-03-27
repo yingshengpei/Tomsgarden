@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#93000a",
+              "inverse-surface": "#33302a",
+              "secondary-fixed": "#ffdeae",
+              "on-surface": "#1e1b16",
+              "surface": "#fff8f2",
+              "tertiary": "#374539",
+              "surface-container-low": "#faf2ea",
+              "secondary-fixed-dim": "#e8c086",
+              "on-tertiary-container": "#c4d4c4",
+              "secondary-container": "#ffd79b",
+              "on-secondary-fixed": "#281800",
+              "surface-container": "#f4ede4",
+              "on-primary-fixed": "#0e1f13",
+              "surface-dim": "#e0d9d1",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-bright": "#fff8f2",
+              "on-tertiary-fixed-variant": "#3c4a3f",
+              "primary-container": "#4a5d4e",
+              "on-surface-variant": "#434843",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#d3e8d5",
+              "background": "#fff8f2",
+              "on-secondary-container": "#7a5c2b",
+              "primary-fixed-dim": "#b7ccb9",
+              "tertiary-fixed": "#d7e7d7",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#737872",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#394b3d",
+              "surface-container-high": "#eee7df",
+              "inverse-primary": "#b7ccb9",
+              "on-primary-container": "#c0d5c2",
+              "tertiary-container": "#4e5c50",
+              "surface-tint": "#506354",
+              "surface-container-highest": "#e9e1d9",
+              "outline-variant": "#c3c8c1",
+              "on-background": "#1e1b16",
+              "inverse-on-surface": "#f7f0e7",
+              "primary": "#334537",
+              "on-tertiary-fixed": "#121e15",
+              "surface-variant": "#e9e1d9",
+              "on-secondary": "#ffffff",
+              "secondary": "#775928",
+              "on-secondary-fixed-variant": "#5d4213",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 4px 32px rgba(30, 27, 22, 0.04);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#fff8f2] dark:bg-[#1e1b16] w-full top-0 z-50 shadow-[0px_4px_32px_rgba(30,27,22,0.04)] sticky">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#334537] dark:text-[#c3c8c1] active:scale-95 duration-200 cursor-pointer" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-wide text-[#334537] dark:text-[#c3c8c1]">门店导航</h1>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#334537] cursor-pointer" data-icon="more_horiz">more_horiz</span>
+</div>
+</div>
+</header>
+<main class="max-w-md mx-auto px-5 py-6 space-y-8">
+<!-- Hero Intro Section -->
+<section class="space-y-2">
+<h2 class="font-headline font-extrabold text-3xl tracking-tight text-primary leading-tight">汤姆的花园生活馆</h2>
+<p class="font-body text-secondary text-sm leading-relaxed">欢迎到店体验汤姆的花园生活方式空间</p>
+</section>
+<!-- Map Section (Asymmetric Editorial Style) -->
+<section class="relative">
+<div class="rounded-xl overflow-hidden editorial-shadow bg-surface-container-high h-[280px] w-full relative">
+<img class="w-full h-full object-cover grayscale-[0.2] opacity-90" data-alt="a stylized clean architectural map showing a green garden plot and minimal surrounding streets in soft daylight" data-location="Shanghai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_tkK2feWvlDKDniRbQD_K9bJbOLE5zpG90jKU8Y9-SEXGm4pw_lT72WHewbC8YHqkJpE0Xbhi2fgfDMUSZy-D23x7h7AqJcfTl9Y_b7MLcHPROcZUvI72ogHvtDINJ17JQua8YxrBNjdsljIERRrwHSN10YWOHDGVx-GnlJf_f2tZ8cUrTuMtAClJbS0jEQ13RMsiR442d_D7zM1KcnsWnpne2Qj-0sRTFBfwTe4C5SRjJCk6WP4pfWb9s06vU6fi_LMZwKhm8VhC"/>
+<!-- Custom Pin Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-on-primary p-2 rounded-full shadow-lg animate-bounce">
+<span class="material-symbols-outlined block" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="mt-1 bg-surface-container-lowest px-3 py-1 rounded-full text-[10px] font-bold shadow-sm border border-outline-variant/20">
+                        TOM'S GARDEN
+                    </div>
+</div>
+<!-- Navigation Overlay UI -->
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="bg-surface-container-lowest p-2 rounded-lg shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add">add</span>
+</button>
+<button class="bg-surface-container-lowest p-2 rounded-lg shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="remove">remove</span>
+</button>
+<button class="bg-primary p-3 rounded-full shadow-xl active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-white" data-icon="near_me" style="font-variation-settings: 'FILL' 1;">near_me</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Store Info Card -->
+<section class="bg-surface-container-low rounded-xl p-6 space-y-6 editorial-shadow border border-outline-variant/10">
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="pin_drop">pin_drop</span>
+<div class="flex-1">
+<p class="font-bold text-primary mb-1">详细地址</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">上海市徐汇区安福路248号（近武康路口）</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="schedule">schedule</span>
+<div class="flex-1">
+<p class="font-bold text-primary mb-1">营业时间</p>
+<div class="flex gap-3 items-center">
+<p class="text-sm text-on-surface-variant">周一至周日 10:00 - 22:00</p>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] px-2 py-0.5 rounded-full font-bold">营业中</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="call">call</span>
+<div class="flex-1">
+<p class="font-bold text-primary mb-1">联系电话</p>
+<p class="text-sm text-on-surface-variant">021-6433 1234</p>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<p class="italic text-xs text-secondary leading-relaxed opacity-80">
+                    "在这里，我们不仅贩卖植物，更在培育一种与自然共生的生活艺术。"
+                </p>
+</div>
+<!-- Primary Actions -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<button class="bg-primary text-on-primary rounded-full py-3.5 flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="navigation" style="font-variation-settings: 'FILL' 1;">navigation</span>
+<span class="font-bold text-sm tracking-wide">一键导航</span>
+</button>
+<button class="bg-surface-container-highest text-primary rounded-full py-3.5 flex items-center justify-center gap-2 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="phone_in_talk">phone_in_talk</span>
+<span class="font-bold text-sm">电话联系</span>
+</button>
+</div>
+</section>
+<!-- Transportation Details -->
+<section class="space-y-6">
+<h3 class="font-headline font-bold text-xl text-primary px-1">交通指南</h3>
+<div class="space-y-4">
+<!-- Driving -->
+<div class="bg-surface-container-lowest rounded-xl p-5 border border-outline-variant/15 flex gap-4">
+<div class="bg-secondary/10 p-3 rounded-lg self-start">
+<span class="material-symbols-outlined text-secondary" data-icon="directions_car">directions_car</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-primary">自驾到店</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                            导航至“安福路248号”，店门口设有临时落客区。
+                        </p>
+<div class="bg-surface-container p-3 rounded-lg mt-2">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="local_parking">local_parking</span>
+<span class="text-[11px] font-bold text-secondary">停车提示</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">推荐停往：安福路路边车位或附近话剧大厦地下停车场。</p>
+</div>
+</div>
+</div>
+<!-- Walking -->
+<div class="bg-surface-container-lowest rounded-xl p-5 border border-outline-variant/15 flex gap-4">
+<div class="bg-primary/10 p-3 rounded-lg self-start">
+<span class="material-symbols-outlined text-primary" data-icon="directions_walk">directions_walk</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-primary">步行到店</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                            地铁10/11号线“交通大学站”2号口出，步行约800米。或从武康大楼沿武康路步行5分钟。
+                        </p>
+</div>
+</div>
+<!-- Landmarks -->
+<div class="bg-surface-container-lowest rounded-xl p-5 border border-outline-variant/15 flex gap-4">
+<div class="bg-tertiary/10 p-3 rounded-lg self-start">
+<span class="material-symbols-outlined text-tertiary" data-icon="castle">castle</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-bold text-primary">周边地标</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                            距离“武康路网红墙”约300米，紧邻上海话剧艺术中心。
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Service Link -->
+<section class="flex justify-center pt-4">
+<button class="flex items-center gap-2 text-primary/70 hover:text-primary transition-colors py-2 px-4 rounded-full active:bg-surface-container">
+<span class="material-symbols-outlined text-lg" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-xs font-bold">在线客服 · 咨询更多详情</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#fff8f2]/90 dark:bg-[#1e1b16]/90 backdrop-blur-xl shadow-[0px_-4px_32px_rgba(30,27,22,0.06)] rounded-t-[1.5rem] border-t border-[#c3c8c1]/10">
+<a class="flex flex-col items-center justify-center text-[#4a5d4e] dark:text-[#c3c8c1] opacity-60 hover:opacity-100 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-[24px]" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold mt-1">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4a5d4e] dark:text-[#c3c8c1] opacity-60 hover:opacity-100 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-[24px]" data-icon="storefront">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold mt-1">商城</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#334537] text-[#fff8f2] rounded-full px-5 py-2 shadow-lg shadow-[#334537]/20 active:scale-95 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-[24px]" data-icon="local_activity">local_activity</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold mt-0.5">活动</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4a5d4e] dark:text-[#c3c8c1] opacity-60 hover:opacity-100 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-[24px]" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold mt-1">我的</span>
+</a>
+</nav>
+</body></html>

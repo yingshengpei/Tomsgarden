@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>在线咨询 - 汤姆的花园生活馆</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#93000a",
+              "tertiary-container": "#4e5c50",
+              "on-primary-container": "#c0d5c2",
+              "on-primary-fixed-variant": "#394b3d",
+              "primary-fixed": "#d3e8d5",
+              "inverse-surface": "#33302a",
+              "surface": "#fff8f2",
+              "on-background": "#1e1b16",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "surface-dim": "#e0d9d1",
+              "on-surface": "#1e1b16",
+              "secondary-fixed": "#ffdeae",
+              "secondary-container": "#ffd79b",
+              "on-error": "#ffffff",
+              "surface-container-low": "#faf2ea",
+              "on-secondary-fixed": "#281800",
+              "surface-container-high": "#eee7df",
+              "on-secondary-container": "#7a5c2b",
+              "on-surface-variant": "#434843",
+              "on-tertiary-container": "#c4d4c4",
+              "inverse-on-surface": "#f7f0e7",
+              "on-tertiary-fixed-variant": "#3c4a3f",
+              "secondary-fixed-dim": "#e8c086",
+              "error": "#ba1a1a",
+              "on-tertiary": "#ffffff",
+              "outline": "#737872",
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#e9e1d9",
+              "on-secondary": "#ffffff",
+              "tertiary": "#374539",
+              "surface-tint": "#506354",
+              "surface-bright": "#fff8f2",
+              "outline-variant": "#c3c8c1",
+              "surface-container": "#f4ede4",
+              "primary-container": "#4a5d4e",
+              "tertiary-fixed": "#d7e7d7",
+              "primary": "#334537",
+              "on-tertiary-fixed": "#121e15",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#5d4213",
+              "on-primary-fixed": "#0e1f13",
+              "surface-variant": "#e9e1d9",
+              "inverse-primary": "#b7ccb9",
+              "primary-fixed-dim": "#b7ccb9",
+              "secondary": "#775928",
+              "background": "#fff8f2",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "Noto Sans SC"],
+              "body": ["Plus Jakarta Sans", "Noto Sans SC"],
+              "label": ["Plus Jakarta Sans", "Noto Sans SC"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .bg-editorial-gradient { background: linear-gradient(135deg, #334537 0%, #4a5d4e 100%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex items-center px-4 h-16 bg-[#fff8f2] dark:bg-[#1e1b16] z-50 shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#334537] dark:text-[#c3c8c1] active:scale-95 duration-200 cursor-pointer">arrow_back</span>
+<h1 class="font-['Manrope'] font-bold text-xl tracking-tight text-[#334537] dark:text-[#c3c8c1]">在线咨询</h1>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-10">
+<div class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-medium mb-4">
+                Service Center
+            </div>
+<h2 class="text-4xl font-headline font-extrabold text-primary mb-2 tracking-tight">在线咨询</h2>
+<p class="text-secondary font-medium italic opacity-80">有问题，随时来问我们</p>
+</section>
+<!-- Welcome Card -->
+<section class="mb-10 relative overflow-hidden rounded-xl bg-surface-container-low p-8 border border-outline-variant/10">
+<div class="relative z-10">
+<p class="text-primary leading-relaxed text-lg font-medium">
+                    你好，欢迎来到汤姆的花园生活馆。你可以咨询订位、菜单、植物选购、活动报名、设计服务或养护服务。
+                </p>
+<div class="mt-6 flex items-center gap-3 text-secondary text-sm">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>服务时间：09:00 - 21:00</span>
+</div>
+</div>
+<!-- Decorative Plant Background Image -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 opacity-10 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="delicate minimalist botanical line art of a monstera leaf in forest green tones for subtle background decoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWcTzSaGVPbkrVGEnF9e5vrUpeDWq_FGgAhZUnXVN6t9zWWw88GLgXFBtV6SLNdOcAUbfrtcO6XJk9JMrbfU_ATlWRhFNAOYdt6i_GqQ_nFn4ihtj40hqInmQX6311pnzsOSSB4lQ1SQ0-MTWIR2d5_MG6SZiytTMQAqHT5OvnIYTyT97bYojQ9kf5XKZUa8N2aptNT8q_Gq2J4iW5nle2Z2ilbojJU21QN2KjIJ10nqCzShC0RHN7Os_3ilWFlNjpYFaEFmYEf-Pe"/>
+</div>
+</section>
+<!-- Quick Entry Pills -->
+<section class="mb-10">
+<h3 class="text-sm font-bold text-outline uppercase tracking-widest mb-4 px-1">猜你想问</h3>
+<div class="flex flex-wrap gap-2">
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all active:scale-95">今天还有位置吗？</button>
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all active:scale-95">最近有什么活动？</button>
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all active:scale-95">植物可以配送吗？</button>
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all active:scale-95">设计服务怎么咨询？</button>
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all active:scale-95">养护服务适合我吗？</button>
+<button class="bg-surface-container-lowest border border-outline-variant/30 px-5 py-2.5 rounded-full text-sm text-primary hover:bg-primary hover:text-white transition-all active:scale-95">幼儿园项目怎么沟通？</button>
+</div>
+</section>
+<!-- Category Grid -->
+<section class="mb-10">
+<h3 class="text-sm font-bold text-outline uppercase tracking-widest mb-4 px-1">咨询分类</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="group bg-surface-container-high rounded-xl p-6 text-center cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">restaurant_menu</span>
+</div>
+<span class="text-sm font-bold text-primary">订位与菜单</span>
+</div>
+<div class="group bg-surface-container-high rounded-xl p-6 text-center cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">potted_plant</span>
+</div>
+<span class="text-sm font-bold text-primary">园艺商品</span>
+</div>
+<div class="group bg-surface-container-high rounded-xl p-6 text-center cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">event</span>
+</div>
+<span class="text-sm font-bold text-primary">活动报名</span>
+</div>
+<div class="group bg-surface-container-high rounded-xl p-6 text-center cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<span class="text-sm font-bold text-primary">设计咨询</span>
+</div>
+<div class="group bg-surface-container-high rounded-xl p-6 text-center cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<span class="text-sm font-bold text-primary">绿里养护</span>
+</div>
+<div class="group bg-surface-container-high rounded-xl p-6 text-center cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all">
+<div class="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<span class="text-sm font-bold text-primary">幼儿园专项</span>
+</div>
+</div>
+</section>
+<!-- Contact Methods (Bento Style) -->
+<section class="mb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-primary text-white p-6 rounded-xl flex flex-col justify-between min-h-[160px]">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-3xl">call</span>
+<span class="text-xs uppercase tracking-widest opacity-60">Hotline</span>
+</div>
+<div>
+<p class="text-2xl font-headline font-bold">021-12345678</p>
+<p class="text-sm opacity-70 mt-1">客服电话 · 快速响应</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-6 rounded-xl flex flex-col justify-between min-h-[160px]">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-3xl text-[#07C160]">chat</span>
+<span class="text-xs uppercase tracking-widest text-outline">WeChat</span>
+</div>
+<div class="flex items-center gap-3">
+<div>
+<p class="text-xl font-bold text-primary">微信实时咨询</p>
+<p class="text-sm text-secondary mt-1">添加专属花艺顾问</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline">chevron_right</span>
+</div>
+</div>
+<div class="md:col-span-2 bg-secondary-container/30 border border-secondary/10 p-6 rounded-xl flex items-center gap-4">
+<div class="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-primary">在线留言入口</h4>
+<p class="text-sm text-secondary">无法实时沟通？请留下您的需求，我们会尽快回复</p>
+</div>
+<span class="material-symbols-outlined text-outline">arrow_forward</span>
+</div>
+</section>
+<!-- Preparation Tip -->
+<section class="mb-16 bg-surface-container-low/50 p-6 rounded-xl border border-dashed border-outline-variant">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary shrink-0">info</span>
+<p class="text-sm text-secondary leading-relaxed">
+                    如果你已经有现场图片、平面图或需求资料，也可以提前准备，我们会更高效地了解你的情况。
+                </p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-8 pt-4 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-xl rounded-t-[1.5rem] shadow-[0_-4px_32px_rgba(30,27,22,0.04)] border-t border-[#c3c8c1]/15">
+<a class="flex flex-col items-center justify-center text-[#4a5d4e] dark:text-[#c3c8c1] p-2 hover:bg-[#faf2ea] dark:hover:bg-[#2b2922] rounded-full transition-transform active:scale-98" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium mt-1">返回首页</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4a5d4e] dark:text-[#c3c8c1] p-2 hover:bg-[#faf2ea] dark:hover:bg-[#2b2922] rounded-full transition-transform active:scale-98" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium mt-1">电话联系</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#334537] to-[#4a5d4e] text-white rounded-full px-6 py-2 transition-transform active:scale-98" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium mt-1">立即咨询</span>
+</a>
+</nav>
+</body></html>

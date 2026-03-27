@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>汤姆的花园 - 花园轻西餐</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-highest": "#e9e1d9",
+                        surface: "#fff8f2",
+                        "surface-container-high": "#eee7df",
+                        outline: "#737872",
+                        "tertiary-fixed-dim": "#bbcbbb",
+                        "tertiary-container": "#4e5c50",
+                        "on-secondary-fixed": "#281800",
+                        background: "#fff8f2",
+                        "on-primary-fixed-variant": "#394b3d",
+                        "primary-fixed-dim": "#b7ccb9",
+                        "on-error-container": "#93000a",
+                        tertiary: "#374539",
+                        "on-background": "#1e1b16",
+                        "outline-variant": "#c3c8c1",
+                        "inverse-on-surface": "#f7f0e7",
+                        "on-secondary-fixed-variant": "#5d4213",
+                        "on-tertiary-fixed-variant": "#3c4a3f",
+                        "on-secondary-container": "#7a5c2b",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d3e8d5",
+                        "secondary-container": "#ffd79b",
+                        "surface-container": "#f4ede4",
+                        "secondary-fixed-dim": "#e8c086",
+                        "primary-container": "#4a5d4e",
+                        secondary: "#775928",
+                        "tertiary-fixed": "#d7e7d7",
+                        "surface-tint": "#506354",
+                        "on-tertiary-container": "#c4d4c4",
+                        error: "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#e0d9d1",
+                        "on-primary-fixed": "#0e1f13",
+                        "on-tertiary-fixed": "#121e15",
+                        "on-surface": "#1e1b16",
+                        "inverse-surface": "#33302a",
+                        primary: "#334537",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#434843",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e9e1d9",
+                        "secondary-fixed": "#ffdeae",
+                        "surface-container-low": "#faf2ea",
+                        "surface-bright": "#fff8f2",
+                        "on-primary-container": "#c0d5c2",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#b7ccb9"
+                    },
+                    fontFamily: {
+                        headline: ["Manrope"],
+                        body: ["Plus Jakarta Sans"],
+                        label: ["Plus Jakarta Sans"],
+                        display: "Manrope"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Plus Jakarta Sans', 'Source Han Sans SC', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar Standardized -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-md shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<button class="flex items-center justify-center p-2 text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="text-[#334537] dark:text-[#faf2ea] font-['Manrope'] font-black tracking-widest text-lg">花园轻西餐</span>
+<span class="text-[10px] uppercase font-headline tracking-[0.2em] font-bold text-[#334537]/60 dark:text-[#faf2ea]/60">Tom's Garden</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-surface-container-high hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer">
+<img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6SQj8r98jOAyu8DIVyILwbPraudLmQBlRTK6oKM9NK245KYfj0nbfyrZKb7uRe9jXKynyOZXQx8CI-wSF8kYoj6kgU24xvrMyggTWuIpCb2z_DRakCBx76U2YWdEV_dU9iiGqWtFDq_YFyOVq7TA1Z8EjlfJoYjDI-abuON99QOWG0NRv_W8xIzNqe80iVyhH9iuNmz61PjURA5cjH_ZnBar35qzMRpCbviurbXwqsZmV96O49Kd1peAwG4Dwa1-mhf5gg02K18O6"/>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-24 mt-4">
+<!-- Reservation Entry Banner -->
+<section class="relative rounded-2xl overflow-hidden aspect-[16/7] mb-10 group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant interior of a sun-drenched greenhouse restaurant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCol1Ot7ZtbWA2cI63TB7Gj0ssFCJkgCutWxhg2-tniaOH8UcaZAtjJKOxeVl_W1MYEFALWUCYj7oMZC3XG_ZgsFhMt3U3xIQ3xrnd4vL_8Xwp1mzQSbkMk6TeGjKzv4BOB3L5Yz9BcrMil6t8nAQxu19IWd0nqCozFBhcoqT4YSEtKx5id2spm6kk-WTAZ_Iv69phBg0-92WQxy0ES5efmJvlFR8ifEmdOD6m3t8cEhqBEPwA3uIrpLurOkRO0zOC2NxhUHoPp3-VW" style=""/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent flex flex-col justify-center px-8 text-white">
+<h2 class="text-3xl font-headline font-bold mb-2 tracking-tight">在自然中享用美味</h2>
+<p class="text-white/90 font-body mb-6 max-w-xs">预约您的花园餐桌，开启一场感官与味蕾的森林之旅。</p>
+<button class="bg-surface text-primary px-8 py-3 rounded-full font-bold w-fit shadow-lg active:scale-95 transition-transform">
+                    立即预约
+                </button>
+</div>
+</section>
+<!-- Menu Category Navigation -->
+<nav class="flex overflow-x-auto no-scrollbar gap-4 mb-10 pb-2">
+<button class="flex-none px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold transition-all shadow-sm">Brunch 早午餐</button>
+<button class="flex-none px-6 py-2.5 rounded-full bg-surface-container-low text-primary font-semibold hover:bg-surface-container transition-colors">Mains 主食</button>
+<button class="flex-none px-6 py-2.5 rounded-full bg-surface-container-low text-primary font-semibold hover:bg-surface-container transition-colors">Desserts 甜品</button>
+<button class="flex-none px-6 py-2.5 rounded-full bg-surface-container-low text-primary font-semibold hover:bg-surface-container transition-colors">Drinks 饮品</button>
+<button class="flex-none px-6 py-2.5 rounded-full bg-surface-container-low text-primary font-semibold hover:bg-surface-container transition-colors">Kids 儿童餐</button>
+</nav>
+<!-- Featured Seasonal Sets -->
+<section class="mb-12">
+<div class="flex justify-between items-end mb-6">
+<div>
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-2">Seasonal Special</span>
+<h3 class="text-2xl font-headline font-bold text-primary">季节限定套餐</h3>
+</div>
+<button class="text-secondary font-bold text-sm">查看全部</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Set Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm group">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artistic flat lay of a double brunch set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0bCOomBymKySVVXcBeWHM9lY3gYiG63eyUqMo0_txSEron4JtoiRB52q010mIzvb8gXzrjBZQ8th0XBuSqK260nheUXDAFH0HNcC3tCWwb46H3g2oUZBQiH0mPXRrKagapFOjeCAbZxOsFRQ-0kYMEj0Q4S-xdLoH8ovB0mFw4iHddhxM3HEn-Dpv7TULD4eutwGCBSX4ifr37yMcOMu8Bj-j74s-tSPxZi-xr5loHJV4cHfROw1-qqeUlzVUshb0rFoRtOZuSwQ2" style=""/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold text-primary">双人花园午后套餐</h4>
+<span class="text-2xl font-headline font-extrabold text-secondary">¥298</span>
+</div>
+<p class="text-outline text-sm leading-relaxed mb-4">包含主餐2份、精选甜品2份及花园特调饮品，适合在微风吹拂的午后共享。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container text-primary text-xs rounded">健康低脂</span>
+<span class="px-2 py-1 bg-surface-container text-primary text-xs rounded">主厨推荐</span>
+</div>
+</div>
+</div>
+<!-- Set Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm group">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Gourmet dinner set featuring seared salmon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbV05NHXX416LkDCl7E2iTFf2AsoSCNbHg2LOX0CpjgEimXKfqLINSCgFn3RgKUItykSugceWkW7S9BSIHKDqdpGsiCbpCTVht0f-kMeh8usu4FVoipFiIE3O0357XTTHsAq4fVJAbL-uhv4s3dq5YOY73M8bIv9QDDHXECuzR0w0G2w951OFe8GDcMCPVnIWET9uwuH09JgWDVuuJUEI7S4EVDDu-3rOTWgr7HomOPJhTc67SH_0i3TCo8C9ROwbC7uOYoZ7v03Jj" style=""/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="text-xl font-bold text-primary">星空露台单人晚宴</h4>
+<span class="text-2xl font-headline font-extrabold text-secondary">¥188</span>
+</div>
+<p class="text-outline text-sm leading-relaxed mb-4">慢煎挪威三文鱼配时令烤蔬菜，赠送一杯长相思白葡萄酒。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container text-primary text-xs rounded">氛围首选</span>
+<span class="px-2 py-1 bg-surface-container text-primary text-xs rounded">当季时令</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dish List -->
+<section class="mb-12">
+<h3 class="text-2xl font-headline font-bold text-primary mb-8">单品赏味</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+<!-- Dish Item 1 -->
+<div class="flex flex-col">
+<div class="rounded-2xl overflow-hidden mb-4 aspect-square">
+<img class="w-full h-full object-cover" data-alt="Vibrant avocado toast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXkbIItvZBTrhnIdrSgz53HKsFrY5bs9RQan4HkSNxJO7XC8cwODqWuQ57ordZ16gi5qw3XthR3YBYAJeBpaYoOzlG15tKVumGxsRn0mth_HOwBpcG16cMJrwrdBhJyD5orpyRINfPSvozaViaRe1NRcbDGK1leUBfgVwheAQMnqCZj_iph8O_S0QzpPtCFDd05gdnMqHiBqw-KLeUeApiGwMSk-dwSh0ySyi9ZXAG35gw6n846qoD8REVKPERO0miwlaCS91uhIo2" style=""/>
+</div>
+<div class="px-1">
+<h5 class="text-lg font-bold text-primary mb-1">牛油果水波蛋吐司</h5>
+<p class="text-outline text-xs mb-3 line-clamp-2">选用北非牛油果及初生蛋，配以自制酸面团吐司，口感丝滑细腻。</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-headline font-bold text-secondary">¥78</span>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish Item 2 -->
+<div class="flex flex-col">
+<div class="rounded-2xl overflow-hidden mb-4 aspect-square">
+<img class="w-full h-full object-cover" data-alt="Golden brown pancakes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWP4rwN9Cco-g3m0X6n-B_LroiZdKoKVQqIv75QCWEszTyL3ad60fMsk66IODFCMSsiV93iSDIlLhhNsTsWB_CofYSYdnut8z9-tcUKYdtMCC97eQHwdx1Z8XCnNWNPVMA9mSE7y20xOqmHMLSGUUjSZvdoTRPhrUlQBYQn3nb5wPIiPlGinmric9mcVGKWBkPjH-jz518GaRmALZ8i94e4E_VLB1a8lzgOabCLoY2S31BHqKIag6CGh-4owQs1O4SRakRDEA-6wRw" style=""/>
+</div>
+<div class="px-1">
+<h5 class="text-lg font-bold text-primary mb-1">林间浆果松饼</h5>
+<p class="text-outline text-xs mb-3 line-clamp-2">蓬松美式松饼配以每日清晨采摘的有机浆果，淋上纯净椴树蜜。</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-headline font-bold text-secondary">¥62</span>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dish Item 3 -->
+<div class="flex flex-col">
+<div class="rounded-2xl overflow-hidden mb-4 aspect-square">
+<img class="w-full h-full object-cover" data-alt="Healthy Buddha bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4coYj-1gx6fUy0MzCBGAGS7qUY_fYQ2k56rQeHi_bpsu12_rc8uO_k2OZK56GpPubPtR0T4dv_d_B1V4NUyjEDcbIGpqlYKE4xjXFzjxo2Bs0dldwRt0ZAd4VrlrpjarQuS4MWmO8RetjAmRkVekhxoxnsjYbtgzqZFcY6g_FjDZ_NAvQoVH9WxKwPhXwV5YGEdGqeXB1UWfslcvoXcXhgZPgE6JbQV58tvjjBRggfMDYNlCPVcKivLO_4mCbGENyJRIJ0EpRnjRC" style=""/>
+</div>
+<div class="px-1">
+<h5 class="text-lg font-bold text-primary mb-1">大地滋养能量碗</h5>
+<p class="text-outline text-xs mb-3 line-clamp-2">红藜麦、烤南瓜、羽衣甘蓝与坚果的平衡搭配，富含膳食纤维。</p>
+<div class="flex justify-between items-center">
+<span class="text-lg font-headline font-bold text-secondary">¥88</span>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Fixed Reservation Actions -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-40">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl border border-outline-variant/15 rounded-2xl p-4 shadow-2xl flex items-center justify-between gap-4">
+<button class="flex-1 bg-surface-container-highest text-primary py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">support_agent</span>
+                联系客服
+            </button>
+<button class="flex-[2] bg-primary text-on-primary py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg" style='font-variation-settings: "FILL" 1;'>event_available</span>
+                立即订位
+            </button>
+</div>
+</div>
+<!-- BottomNavBar Standardized -->
+<nav class="fixed bottom-0 left-0 w-full rounded-t-[1.5rem] z-50 pb-safe bg-[#fff8f2]/90 dark:bg-[#1e1b16]/90 backdrop-blur-xl shadow-[0_-4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex justify-around items-center h-20 px-4 w-full">
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">home_growth</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">首页</span>
+</a>
+<!-- Active: 商城 -->
+<a class="flex flex-col items-center justify-center text-[#334537] dark:text-[#ffd79b] bg-[#4a5d4e]/10 dark:bg-[#ffd79b]/10 rounded-xl px-4 py-1 transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-2xl mb-1" style='font-variation-settings: "FILL" 1;'>storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">商城</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">活动</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined text-2xl mb-1">person_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">我的</span>
+</a>
+</div>
+</nav>
+</body></html>

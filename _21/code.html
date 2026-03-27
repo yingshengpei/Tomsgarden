@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#e9e1d9",
+                        "tertiary": "#374539",
+                        "secondary-fixed": "#ffdeae",
+                        "primary-fixed": "#d3e8d5",
+                        "on-error-container": "#93000a",
+                        "surface": "#fff8f2",
+                        "on-secondary-fixed-variant": "#5d4213",
+                        "surface-container": "#f4ede4",
+                        "tertiary-fixed-dim": "#bbcbbb",
+                        "on-secondary-container": "#7a5c2b",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#b7ccb9",
+                        "primary": "#334537",
+                        "secondary": "#775928",
+                        "tertiary-container": "#4e5c50",
+                        "surface-container-low": "#faf2ea",
+                        "primary-container": "#4a5d4e",
+                        "on-surface": "#1e1b16",
+                        "on-primary-container": "#c0d5c2",
+                        "on-tertiary-fixed-variant": "#3c4a3f",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c8c1",
+                        "on-primary-fixed-variant": "#394b3d",
+                        "secondary-container": "#ffd79b",
+                        "on-surface-variant": "#434843",
+                        "surface-container-high": "#eee7df",
+                        "inverse-surface": "#33302a",
+                        "primary-fixed-dim": "#b7ccb9",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "background": "#fff8f2",
+                        "tertiary-fixed": "#d7e7d7",
+                        "on-background": "#1e1b16",
+                        "surface-container-highest": "#e9e1d9",
+                        "surface-bright": "#fff8f2",
+                        "surface-tint": "#506354",
+                        "on-secondary-fixed": "#281800",
+                        "on-tertiary-fixed": "#121e15",
+                        "on-tertiary-container": "#c4d4c4",
+                        "on-primary-fixed": "#0e1f13",
+                        "surface-dim": "#e0d9d1",
+                        "inverse-on-surface": "#f7f0e7",
+                        "error-container": "#ffdad6",
+                        "outline": "#737872",
+                        "secondary-fixed-dim": "#e8c086",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "Source Han Sans CN", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "Source Han Sans CN", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "Source Han Sans CN", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', 'Source Han Sans CN', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col pb-24">
+<!-- Top Navigation Anchor (Manual suppression of BottomNavBar on transactional page) -->
+<nav class="bg-[#fff8f2] dark:bg-[#1e1b16] font-['Manrope'] font-bold tracking-wide flex items-center justify-between px-6 py-4 w-full sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#334537] cursor-pointer hover:opacity-80 transition-opacity">arrow_back</span>
+<span class="text-lg font-bold text-[#334537] dark:text-[#eee7df]">Order Details</span>
+</div>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</nav>
+<main class="flex-grow container max-w-md mx-auto px-6 py-8">
+<!-- Success State Section -->
+<section class="flex flex-col items-center justify-center text-center space-y-6 mb-12">
+<div class="w-20 h-20 rounded-full bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="space-y-2">
+<h1 class="text-3xl font-headline font-extrabold tracking-tight text-primary">提交成功</h1>
+<p class="text-secondary font-medium italic opacity-80">您的订单已开启自然之旅</p>
+</div>
+</section>
+<!-- Brand Illustration (Editorial Bleed) -->
+<section class="relative -mx-6 mb-10 h-64 overflow-hidden">
+<img alt="Botanical Scene" class="w-full h-full object-cover" data-alt="Dreamy sunlight filtering through lush green fern leaves in a misty indoor botanical garden, soft editorial lighting, serene atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXuH_uug6ED9Gyz-vw5LUFxSlZhdSArmQk3BwL55eBKg5IGzerso3Hf3wDBohlYUJX-k6rTQP71BFh37R-x_Qj-PpZl5RUrOYgAXbWP9GKPOLkLyiidi5Ug1sB9dWYeAw2wCQv0ajTZzGfv2_kL5mLFxdcKs0HUw68sWJzQznrasOT3F5180FM3DXPXUiWLGyp-4HbDRQPo8-Medk9oZFp8eD5pIaGIPN7o-OUgc7b0Yq2TlkvmugbTu7VQtATIPig7maWb7HeXOX4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-6 right-6">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase">The Living Lab</span>
+</div>
+</section>
+<!-- Order Summary Detail -->
+<section class="bg-surface-container-low rounded-xl p-6 space-y-4 mb-10 transition-all duration-300">
+<div class="flex justify-between items-center text-sm border-b border-outline-variant/15 pb-4">
+<span class="text-on-surface-variant font-medium">订单编号</span>
+<span class="text-on-surface font-headline font-bold">TJ202310248892</span>
+</div>
+<div class="flex justify-between items-center text-sm border-b border-outline-variant/15 pb-4">
+<span class="text-on-surface-variant font-medium">支付时间</span>
+<span class="text-on-surface font-headline">2023-10-24 14:30:05</span>
+</div>
+<div class="flex justify-between items-center text-sm pt-2">
+<span class="text-on-surface-variant font-medium">服务驿站</span>
+<span class="text-on-surface font-headline">汤姆的花园 · 概念店</span>
+</div>
+</section>
+<!-- Action Buttons Cluster -->
+<section class="space-y-4 mb-16">
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-full shadow-lg shadow-primary/10 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                返回首页
+                <span class="material-symbols-outlined text-lg">home</span>
+</button>
+<button class="w-full border-2 border-primary/20 text-primary font-bold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-primary-container/5 transition-colors">
+                查看订单详情
+                <span class="material-symbols-outlined text-lg">receipt_long</span>
+</button>
+</section>
+<!-- Recommendation Bento Section -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<h2 class="text-xl font-headline font-bold text-primary">猜你还喜欢</h2>
+<span class="text-secondary text-xs font-bold uppercase tracking-widest">More For You</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Rec Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:scale-[1.02] transition-transform duration-300">
+<img alt="Small Plant" class="w-full h-32 object-cover" data-alt="Minimalist ceramic pot with a small succulent plant on a clean light oak wooden table in bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApnVp6fthCvmKa29LUfE1i5VZXaUqeZzxukgLkHvg_TUwIb87OxITnggDhOR6EMki430qWsUR6PLaSaU20g9th2C1A1PjYhy-TAMAHz9JPzq7It31LsdxFA-GnibMvRoaSAOm0gBupwatFQIvJ5a3c2GyApZNcmkgJ78MQNN4LFy95-zBUemxjISHVT_EH-MqlcYVce_klDsovRDYmzx0602ws5DzJUZfl6W9gTKQ0oU8Dopi7CHYjvXyAenr72e0J3TMKmmSO0vnd"/>
+<div class="p-3 space-y-1">
+<p class="text-xs text-on-surface-variant font-medium line-clamp-1">尤加利室内植栽</p>
+<p class="text-sm font-bold text-primary">¥128.00</p>
+</div>
+</div>
+<!-- Rec Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:scale-[1.02] transition-transform duration-300">
+<img alt="Yoga Scented Candle" class="w-full h-32 object-cover" data-alt="Luxury scented glass candle on a stone tray surrounded by dried lavender sprigs, atmospheric warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVcmnNvLKQiRd7WXVD2Isut6wozHl10nPHsc-Nf8RNjgiY5epTZ0pDoL0vlL52rGK_upRT-DlE7EIx8KcYdZcuBx6tPQn24abOrtwWXqqTaE9UfBisyE0hJU1JabJkFnkRHzuRbkqfSVTcR-3JCELaD36UtZbsWmfnd_9S_C1YoaHW5Jrjx8VSd01FB0V7LCz2nbOjPcyHeN4aAwIc6In1nknsPebiUjoj4CCd2smr14yRiKWYrmAjF-NdtL6Qm7_0UdDSScSpG0sH"/>
+<div class="p-3 space-y-1">
+<p class="text-xs text-on-surface-variant font-medium line-clamp-1">森林呼吸香氛蜡烛</p>
+<p class="text-sm font-bold text-primary">¥89.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Success Page Logic: Bottom Nav is suppressed for focus. If it were visible, it would look like this: -->
+<!-- But following the "Focused journey" rule, we suppress global navigation shells here to prioritize the ritual of completion. -->
+<!-- Footer Quote -->
+<footer class="mt-auto px-6 py-12 text-center opacity-40">
+<p class="text-xs font-light tracking-widest leading-relaxed font-body">
+            IN THE GARDEN OF LIFE, <br/>
+            EVERY ORDER IS A SEED SOWN.
+        </p>
+</footer>
+</body></html>

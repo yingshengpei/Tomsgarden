@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>设计预约 | 需求填写 - Tom's Garden</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#506354",
+              "on-tertiary-fixed-variant": "#3c4a3f",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#e0d9d1",
+              "surface-container-high": "#eee7df",
+              "secondary-fixed": "#ffdeae",
+              "on-primary-container": "#c0d5c2",
+              "primary-container": "#4a5d4e",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#d3e8d5",
+              "tertiary": "#374539",
+              "on-tertiary-fixed": "#121e15",
+              "surface-container-low": "#faf2ea",
+              "secondary": "#775928",
+              "outline": "#737872",
+              "on-background": "#1e1b16",
+              "primary": "#334537",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#281800",
+              "on-primary": "#ffffff",
+              "on-primary-fixed-variant": "#394b3d",
+              "error": "#ba1a1a",
+              "surface": "#fff8f2",
+              "tertiary-fixed": "#d7e7d7",
+              "secondary-container": "#ffd79b",
+              "surface-bright": "#fff8f2",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#5d4213",
+              "tertiary-container": "#4e5c50",
+              "surface-variant": "#e9e1d9",
+              "secondary-fixed-dim": "#e8c086",
+              "surface-container": "#f4ede4",
+              "inverse-primary": "#b7ccb9",
+              "inverse-surface": "#33302a",
+              "outline-variant": "#c3c8c1",
+              "background": "#fff8f2",
+              "on-surface-variant": "#434843",
+              "error-container": "#ffdad6",
+              "inverse-on-surface": "#f7f0e7",
+              "primary-fixed-dim": "#b7ccb9",
+              "on-primary-fixed": "#0e1f13",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#7a5c2b",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "on-surface": "#1e1b16",
+              "surface-container-highest": "#e9e1d9",
+              "on-tertiary-container": "#c4d4c4"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "Noto Sans SC"],
+              "body": ["Plus Jakarta Sans", "Noto Sans SC"],
+              "label": ["Plus Jakarta Sans", "Noto Sans SC"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .glass-effect {
+        background: rgba(255, 248, 242, 0.8);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- Header Navigation -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center px-6 h-16 bg-[#fff8f2] shadow-[0_32px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 transition-transform">arrow_back</span>
+<h1 class="font-headline font-bold text-lg tracking-wide text-primary">设计预约</h1>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-md mx-auto">
+<!-- Editorial Intro -->
+<section class="mb-10">
+<h2 class="text-3xl font-headline font-extrabold text-primary mb-3 leading-tight">设计预约｜需求填写</h2>
+<p class="text-body text-on-surface-variant leading-relaxed opacity-80">
+                欢迎开启您的自然共创之旅。请提供以下空间需求信息，我们的设计师将为您量身定制专属的“花园活态实验室”设计方案。
+            </p>
+</section>
+<form class="space-y-8">
+<!-- 1. Customer Info Section -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-6 bg-secondary rounded-full"></span>
+<h3 class="text-lg font-bold text-primary">客户基础信息</h3>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl space-y-5">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">姓名</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4 placeholder:text-outline-variant/60" placeholder="如何称呼您" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">联系电话</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4" placeholder="138 **** ****" type="tel"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">微信</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4" placeholder="WeChat ID" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">身份类别</label>
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary text-sm font-medium" type="button">幼儿园/学校</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-medium" type="button">商业空间</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-medium" type="button">私家花园</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Project Basics Section -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-6 bg-secondary rounded-full"></span>
+<h3 class="text-lg font-bold text-primary">项目概况</h3>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl space-y-5">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">项目名称</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4" placeholder="例：林间探索基地" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">空间类型</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4 text-on-surface-variant appearance-none">
+<option>汤姆儿童七大空间</option>
+<option>阳台花园</option>
+<option>社区微更新</option>
+<option>其他空间</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">占地面积 (㎡)</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4" placeholder="0.00" type="number"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">所在城市</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4" placeholder="北京市" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Needs Deep-dive Section -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-6 bg-secondary rounded-full"></span>
+<h3 class="text-lg font-bold text-primary">核心诉求与优先级</h3>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl space-y-5">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">需要解决的问题</label>
+<textarea class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4 resize-none" placeholder="请详细描述目前场地的局限性或您的改造愿景..." rows="3"></textarea>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">关注重点 (多选)</label>
+<div class="flex flex-wrap gap-2 pt-1">
+<label class="cursor-pointer">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 rounded-lg bg-surface-container-highest peer-checked:bg-secondary-container peer-checked:text-on-secondary-container text-xs font-medium transition-colors">美观度</span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 rounded-lg bg-surface-container-highest peer-checked:bg-secondary-container peer-checked:text-on-secondary-container text-xs font-medium transition-colors">儿童互动</span>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 rounded-lg bg-surface-container-highest peer-checked:bg-secondary-container peer-checked:text-on-secondary-container text-xs font-medium transition-colors">安全性</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 rounded-lg bg-surface-container-highest peer-checked:bg-secondary-container peer-checked:text-on-secondary-container text-xs font-medium transition-colors">自然教育</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 rounded-lg bg-surface-container-highest peer-checked:bg-secondary-container peer-checked:text-on-secondary-container text-xs font-medium transition-colors">成本控制</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Budget & Timeline -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-6 bg-secondary rounded-full"></span>
+<h3 class="text-lg font-bold text-primary">预算与周期</h3>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl space-y-6">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">预期预算区间</label>
+<span class="text-primary font-bold">¥50,000 - ¥100,000</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-outline-variant/30 rounded-full appearance-none cursor-pointer" type="range"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">拟开工日期</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4 text-on-surface-variant" type="date"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-secondary">紧急程度</label>
+<select class="w-full bg-surface-container-lowest border-none rounded-lg focus:ring-1 focus:ring-outline-variant py-3 px-4 text-on-surface-variant appearance-none">
+<option>常规</option>
+<option>紧急</option>
+<option>极速响应</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. File Upload Section -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-6 bg-secondary rounded-full"></span>
+<h3 class="text-lg font-bold text-primary">资料上传</h3>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 text-outline active:scale-95 transition-all">
+<span class="material-symbols-outlined text-3xl mb-1">add_a_photo</span>
+<span class="text-[10px] font-bold">现场实勘图</span>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 text-outline active:scale-95 transition-all">
+<span class="material-symbols-outlined text-3xl mb-1">map</span>
+<span class="text-[10px] font-bold">平面图/户型图</span>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-xl flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 text-outline active:scale-95 transition-all">
+<span class="material-symbols-outlined text-3xl mb-1">collections</span>
+<span class="text-[10px] font-bold">意向参考图</span>
+</div>
+</div>
+</div>
+<!-- 6. Communication Preference -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-6 bg-secondary rounded-full"></span>
+<h3 class="text-lg font-bold text-primary">首选沟通方式</h3>
+</div>
+<div class="flex justify-between items-center bg-surface-container-low p-4 rounded-xl">
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">chat</span>
+</div>
+<span class="text-xs font-medium">微信</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary">call</span>
+</div>
+<span class="text-xs font-medium">电话</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">groups</span>
+</div>
+<span class="text-xs font-medium">线下</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">video_chat</span>
+</div>
+<span class="text-xs font-medium">视频</span>
+</div>
+</div>
+</div>
+</form>
+<!-- Decorative Botanical Quote -->
+<div class="mt-16 mb-8 text-center italic opacity-60">
+<p class="text-sm font-body text-secondary">“在每一寸土地中，播种对自然的好奇心。”</p>
+<div class="flex justify-center gap-1 mt-2">
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+<span class="w-1 h-1 bg-primary rounded-full"></span>
+</div>
+</div>
+</main>
+<!-- Fixed Bottom Button -->
+<div class="fixed bottom-0 left-0 w-full p-6 glass-effect z-50">
+<button class="w-full bg-primary py-4 rounded-full text-on-primary font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span>提交设计需求</span>
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+</div>
+</body></html>

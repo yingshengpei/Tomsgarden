@@ -1,0 +1,217 @@
+<!DOCTYPE html><html class="light" lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#4e5c50",
+              "on-primary": "#ffffff",
+              "surface-container": "#f4ede4",
+              "inverse-primary": "#b7ccb9",
+              "on-surface": "#1e1b16",
+              "surface-dim": "#e0d9d1",
+              "on-secondary-fixed": "#281800",
+              "on-secondary-container": "#7a5c2b",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#e8c086",
+              "surface-variant": "#e9e1d9",
+              "surface": "#fff8f2",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#121e15",
+              "surface-container-highest": "#e9e1d9",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#eee7df",
+              "secondary": "#775928",
+              "inverse-surface": "#33302a",
+              "surface-container-low": "#faf2ea",
+              "on-tertiary-fixed-variant": "#3c4a3f",
+              "surface-tint": "#506354",
+              "on-primary-container": "#c0d5c2",
+              "on-tertiary-container": "#c4d4c4",
+              "inverse-on-surface": "#f7f0e7",
+              "on-background": "#1e1b16",
+              "surface-bright": "#fff8f2",
+              "primary": "#334537",
+              "primary-fixed": "#d3e8d5",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#ffdeae",
+              "primary-fixed-dim": "#b7ccb9",
+              "on-tertiary": "#ffffff",
+              "secondary-container": "#ffd79b",
+              "background": "#fff8f2",
+              "outline-variant": "#c3c8c1",
+              "primary-container": "#4a5d4e",
+              "on-surface-variant": "#434843",
+              "tertiary-fixed": "#d7e7d7",
+              "tertiary": "#374539",
+              "on-primary-fixed": "#0e1f13",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#394b3d",
+              "on-secondary-fixed-variant": "#5d4213",
+              "outline": "#737872"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', 'Source Han Sans SC', sans-serif; }
+        .headline-font { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.bottom-4{bottom:1rem}.bottom-6{bottom:1.5rem}.left-0{left:0px}.left-1\/2{left:50%}.left-4{left:1rem}.top-0{top:0px}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mx-2{margin-left:0.5rem;margin-right:0.5rem}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-2{margin-bottom:0.5rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.aspect-\[4\/5\]{aspect-ratio:4/5}.aspect-square{aspect-ratio:1 / 1}.aspect-video{aspect-ratio:16 / 9}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-32{height:8rem}.h-\[2px\]{height:2px}.h-full{height:100%}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-\[160px\]{min-width:160px}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:1.5rem}.rounded-t-\[1\.5rem\]{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.border-t-\[0\.5px\]{border-top-width:0.5px}.border-\[\#c3c8c1\]\/15{border-color:rgb(195 200 193 / 0.15)}.bg-\[\#eee7df\]{--tw-bg-opacity:1;background-color:rgb(238 231 223 / var(--tw-bg-opacity, 1))}.bg-\[\#fff8f2\]{--tw-bg-opacity:1;background-color:rgb(255 248 242 / var(--tw-bg-opacity, 1))}.bg-\[\#fff8f2\]\/80{background-color:rgb(255 248 242 / 0.8)}.bg-primary{--tw-bg-opacity:1;background-color:rgb(51 69 55 / var(--tw-bg-opacity, 1))}.bg-secondary-container{--tw-bg-opacity:1;background-color:rgb(255 215 155 / var(--tw-bg-opacity, 1))}.bg-surface{--tw-bg-opacity:1;background-color:rgb(255 248 242 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(238 231 223 / var(--tw-bg-opacity, 1))}.bg-surface-container-highest{--tw-bg-opacity:1;background-color:rgb(233 225 217 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(250 242 234 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-surface\/80{background-color:rgb(255 248 242 / 0.8)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-\[\#334537\]{--tw-gradient-from:#334537 var(--tw-gradient-from-position);--tw-gradient-to:rgb(51 69 55 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-\[\#4a5d4e\]{--tw-gradient-to:#4a5d4e var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-10{padding-bottom:2.5rem}.pb-32{padding-bottom:8rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pt-10{padding-top:2.5rem}.pt-16{padding-top:4rem}.pt-2{padding-top:0.5rem}.text-center{text-align:center}.font-\[\'Manrope\'\]{font-family:'Manrope'}.font-\[\'Plus_Jakarta_Sans\'\]{font-family:'Plus Jakarta Sans'}.font-headline{font-family:Manrope, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[\#334537\]{--tw-text-opacity:1;color:rgb(51 69 55 / var(--tw-text-opacity, 1))}.text-on-secondary-container{--tw-text-opacity:1;color:rgb(122 92 43 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(30 27 22 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(67 72 67 / var(--tw-text-opacity, 1))}.text-on-surface\/90{color:rgb(30 27 22 / 0.9)}.text-outline-variant{--tw-text-opacity:1;color:rgb(195 200 193 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(51 69 55 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(119 89 40 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-80{opacity:0.8}.shadow-\[0_-4px_24px_rgba\(30\2c 27\2c 22\2c 0\.04\)\]{--tw-shadow:0 -4px 24px rgba(30,27,22,0.04);--tw-shadow-colored:0 -4px 24px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_32px_32px_rgba\(30\2c 27\2c 22\2c 0\.04\)\]{--tw-shadow:0 32px 32px rgba(30,27,22,0.04);--tw-shadow-colored:0 32px 32px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_4px_12px_rgba\(0\2c 0\2c 0\2c 0\.02\)\]{--tw-shadow:0 4px 12px rgba(0,0,0,0.02);--tw-shadow-colored:0 4px 12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-700{transition-duration:700ms}.selection\:bg-secondary-container *::selection{--tw-bg-opacity:1;background-color:rgb(255 215 155 / var(--tw-bg-opacity, 1))}.selection\:bg-secondary-container::selection{--tw-bg-opacity:1;background-color:rgb(255 215 155 / var(--tw-bg-opacity, 1))}.hover\:opacity-80:hover{opacity:0.8}.hover\:brightness-110:hover{--tw-brightness:brightness(1.1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.dark\:bg-stone-800:is(.dark *){--tw-bg-opacity:1;background-color:rgb(41 37 36 / var(--tw-bg-opacity, 1))}.dark\:bg-stone-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(12 10 9 / var(--tw-bg-opacity, 1))}.dark\:bg-stone-950\/80:is(.dark *){background-color:rgb(12 10 9 / 0.8)}.dark\:text-emerald-500:is(.dark *){--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.dark\:text-stone-200:is(.dark *){--tw-text-opacity:1;color:rgb(231 229 228 / var(--tw-text-opacity, 1))}</style></head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container" data-mode="connect">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full shadow-[0_32px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#334537] dark:text-emerald-500" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] tracking-wide uppercase text-sm font-bold text-[#334537] dark:text-emerald-500">Tom's Garden Living Lab</h1>
+</div>
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#334537] dark:text-emerald-500" data-icon="share">share</span>
+</button>
+</header>
+<main class="pt-16 pb-32">
+<!-- Product Gallery -->
+<section class="relative w-full aspect-[4/5] overflow-hidden">
+<img alt="手作粗陶花器套组" class="w-full h-full object-cover" data-alt="Handcrafted minimalist ceramic vessels in warm earthy tones placed on a rustic stone ledge in a sun-drenched botanical garden with soft green foliage background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcIYelP77UsGH6uddXXmC8S8kVHUH23rUjOlcrjARSwp2mvjwevhdjCJAQII1NjPalMTS6EsqEYijBpdnygQqhSSnR0dlUeLApX-4u743FpdVWCKMokpTidpza6ai8KRkp1TBQBghDJm69mvhbTmPZQA4yjCUD3ptrU1QLlpsUvUdzpEzH3PL-PfigVheJsyNYixswaZ-71MB9fv2VsI9pgxCVN-h_UqaiAi2zMEWMUo9634gZ-iZNJkSfM6yUsOhoXiJWMxSoUoyp">
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+<div class="w-2 h-2 rounded-full bg-white shadow-sm"></div>
+<div class="w-2 h-2 rounded-full bg-white/40 shadow-sm"></div>
+<div class="w-2 h-2 rounded-full bg-white/40 shadow-sm"></div>
+</div>
+</section>
+<!-- Price & Info -->
+<section class="px-6 pt-10 pb-6 bg-surface">
+<div class="flex justify-between items-baseline mb-2">
+<h2 class="text-3xl font-bold font-headline text-primary tracking-tight">手作粗陶花器套组</h2>
+<span class="text-2xl font-bold font-headline text-secondary">¥199.00</span>
+</div>
+<p class="text-on-surface-variant text-lg opacity-80 mb-6">让植物拥有一个温暖的家</p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-xs font-semibold rounded-full tracking-wider">匠心手作</span>
+<span class="px-3 py-1 bg-surface-container-high text-primary text-xs font-semibold rounded-full tracking-wider">透气性佳</span>
+<span class="px-3 py-1 bg-surface-container-high text-primary text-xs font-semibold rounded-full tracking-wider">极简美学</span>
+<span class="px-3 py-1 bg-surface-container-high text-primary text-xs font-semibold rounded-full tracking-wider">顺丰发货</span>
+</div>
+</section>
+<!-- Product Intro (Editorial Paragraph) -->
+<section class="px-6 py-12 bg-surface-container-low">
+<div class="max-w-md mx-auto italic leading-relaxed text-on-surface/90 text-center space-y-4">
+<span class="material-symbols-outlined text-outline-variant block mb-2" data-icon="format_quote">format_quote</span>
+<p class="text-lg">
+                    粗陶的魂，藏在泥土的呼吸与窑火的余温里。每一件花器都是时光的容器，不求华丽，只为盛放生命的本真。
+                </p>
+<p class="text-sm text-secondary font-medium tracking-widest">— 设计师说 —</p>
+</div>
+</section>
+<!-- Scene Display (Asymmetric Bento-ish) -->
+<section class="px-6 py-12">
+<h3 class="font-headline font-bold text-xl mb-8 flex items-center gap-2">
+<span class="w-6 h-[2px] bg-primary"></span> 场景呈现
+            </h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 rounded-xl overflow-hidden aspect-video relative group">
+<img alt="Balcony scene" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist ceramic vase with a single olive branch on a weathered wooden balcony table during late afternoon golden hour with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAraEGVUEpYOTd23oMrLPdea2fRNtq2yuLpTxiJfT60O9hfMiclVUs2Jj06hjJsQFG-9SQamZHx-Ms8jbduA_8Usr_Sc_8gzwHKNQfKwz6WS9GIl1SJuJAlLAiDEyS-VZ6zzNlMEaAkXDC1iDYlKHHlO5kGEtZAnLBQEAl9zmvyxyvwMmMHzgdpgnigEpcv1EMxZxz7udcVjDQWF1YE7dd8yMtwsmP86D0AOpGynFG4nAC1b7usW5YcADH3xzYNPNwlxj8FONNHhGne">
+<div class="absolute bottom-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium">阳光露台</div>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square relative group">
+<img alt="Office desk scene" class="w-full h-full object-cover" data-alt="Close-up of a small ceramic pot on a clean white desk next to a modern lamp and a laptop, emphasizing calm work environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPl_eM6wCa-qSDVj1xxAc2Ia62q82oX0FRZkWkhTQhjdvnxxr7hlrgZyB1-aZHsU01BdZi5gUU4UC56sdb06KfMkQTMX-Snp4TOELof4qZsxjCB1tRlYGv6Gvkg3wtkCiY_6CI1mn2dLvJgMg2U7KNP3dx3W3_jvrqzgx1BodxGMN4McNODEh6Q2V4E_iF9ZyLUZ5vHJjqTmGu3PKAsHfGG67AGdPMcHoazzStbfFj_B7GaXTowuKHUEELJtrZOJCQHl0CIhDRkMRu">
+<div class="absolute bottom-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium">办公桌面</div>
+</div>
+<div class="rounded-xl overflow-hidden aspect-square relative group mt-4">
+<img alt="Detail view" class="w-full h-full object-cover" data-alt="Macro texture of handmade ceramic surface showing earthy grit and subtle glaze variations under soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4V3RakzPm4eMWZcjN4xJiwCyQCitGev3GH7or_rvAuPt6h2p-_WnPu5cjzyZWhO3o0HqxhmgaHtzZE0s6Csx2RpSZ4-lHGpFiw0IYIURhhlRH9dJZbHc1GsbR6adfp78WdkZ7lS4x8c5hnzxlRdVy_0ayKbIOumf4g5Jsjq-DjSLyS_QG4j_KtnYV0_9VogGw_ICjnFW7dOPHBvfnPnD0312eI2KbBT8of8w2iTWm6V5CWi472FLBrK29853Jno9h2wiuTstepORW">
+<div class="absolute bottom-4 left-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium">工艺细节</div>
+</div>
+</div>
+</section>
+<!-- Care Tips -->
+<section class="px-6 py-8 mx-6 bg-surface-container-highest rounded-xl">
+<h3 class="font-headline font-bold text-sm uppercase tracking-widest text-primary mb-6 text-center">养护指南 CARE TIPS</h3>
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center text-center">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="cleaning_services">cleaning_services</span>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">软布擦拭</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="water_drop">water_drop</span>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">自然晾干</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="block">block</span>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">忌用利器</span>
+</div>
+</div>
+</section>
+<!-- Related Recommendations -->
+<section class="px-6 py-12">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline font-bold text-xl">为你推荐</h3>
+<span class="text-xs text-secondary font-bold">查看全部</span>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+<div class="min-w-[160px] bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+<img alt="Mini Succulent" class="w-full h-32 object-cover" data-alt="Small potted succulent with fleshy green leaves in a simple terracotta pot on a white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJunnNYkWKTFdY58L-KRIa-EBhlnKesj3gGqs1RVz4rxdPKYiUBGlFdSnk72pLRpn8T0PUI_9k4R0BrcIN5uJNJ8H--Qa-caNsVumjU0FQhahSqrY9OPFQE30DksoxlI0K_rIAco0W6O8slTYae37KHEwGJPW3fLVkPHbaO1rNl-SjpcBWJ6qCHOW4f5ABQS1kCF7K019IINjBsHBAItD7ld0piFK4wIVzoq17cCMU3xNIAxJjRFDOxCxqAruWS65thJ1QJxcQvixe">
+<div class="p-3">
+<p class="text-sm font-bold truncate">迷你多肉小盆栽</p>
+<p class="text-xs text-secondary font-headline">¥39.00</p>
+</div>
+</div>
+<div class="min-w-[160px] bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+<img alt="Brass Watering Can" class="w-full h-32 object-cover" data-alt="Elegant vintage style brass watering can with a long spout on a wooden shelf next to plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4BP_7LSH18UNFpawidlD2Jm1qZ-Z7w8-GF0SMC5S_Osd1h469m8cMqh6ILEB04RvSBoEY8MVANnXTqRGo0I4liqDOUNU2PhxORnZFemXsP8ppHzznKNCRz-GWQSWjAou3w-PXzDPLwulDVsjA9mAkplPx4Hu6HxyL6f_cAGgcorCPi3EGDMTKS-pl6jXU4kDKwI8VT--2VAwriA7kCHrTCx15Cz59m800fFMGSI31JKN__5h0gie4bCLnWFnHttUSXaatCsYAPzqU">
+<div class="p-3">
+<p class="text-sm font-bold truncate">黄铜长嘴喷壶</p>
+<p class="text-xs text-secondary font-headline">¥128.00</p>
+</div>
+</div>
+<div class="min-w-[160px] bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+<img alt="Garden Scissors" class="w-full h-32 object-cover" data-alt="Professional grade gardening shears on a rustic background with cut flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpWG3pxKY2-H6bxxhLyzCsELMvcmDi5-KqFUa2oEkWT8avEf3SZYBkMza9Qo7elM6Znf8nFlM1kkgu2xINzmJtFuSMbsTsB8bdm0j7eL-4gkJRUawp6aBbgiHYu4DLZd9zB9J3I3S6anMfmDcvmQmru5IShWhGetM0q2wvOJ9ghdC4PMBj4wQ6JqsgVDgSV-iqlmiLbbQ2RM5iz9-stthS7jI_NXYzrAUuKfP-0gBMZviDkmx4YdMt46w3Y5ZWx4oro6sQ5rB6Eg4i">
+<div class="p-3">
+<p class="text-sm font-bold truncate">园艺修剪工具</p>
+<p class="text-xs text-secondary font-headline">¥85.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Action Shell) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-between items-center px-4 pb-10 pt-2 bg-[#fff8f2]/80 dark:bg-stone-950/80 backdrop-blur-xl rounded-t-[1.5rem] border-t-[0.5px] border-[#c3c8c1]/15 shadow-[0_-4px_24px_rgba(30,27,22,0.04)]">
+<button class="flex-1 flex items-center justify-center gap-2 bg-[#eee7df] dark:bg-stone-800 text-[#334537] dark:text-stone-200 rounded-full py-4 px-6 mx-2 my-3 active:scale-[0.98] transition-all hover:brightness-110">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Plus_Jakarta_Sans'] font-semibold text-sm">加入购物车</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-[#334537] to-[#4a5d4e] text-white rounded-full py-4 px-6 mx-2 my-3 active:scale-[0.98] transition-all hover:brightness-110">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-['Plus_Jakarta_Sans'] font-semibold text-sm">立即购买</span>
+</button>
+</nav>
+</body></html>

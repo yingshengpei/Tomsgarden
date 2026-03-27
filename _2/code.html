@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>汤姆的花园</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#334537",
+                        "secondary": "#775928",
+                        "on-surface": "#1e1b16",
+                        "on-surface-variant": "#434843",
+                        "surface": "#fff8f2",
+                        "surface-container": "#f4ede4",
+                        "surface-container-low": "#faf2ea",
+                        "surface-container-high": "#eee7df",
+                        "outline": "#737872",
+                        "outline-variant": "#c3c8c1",
+                        "background": "#fff8f2",
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Sans SC", "Manrope", "sans-serif"],
+                        "body": ["Noto Sans SC", "Plus Jakarta Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "none": "0",
+                        "sm": "4px",
+                        "md": "8px",
+                        "lg": "12px",
+                        "xl": "16px",
+                        "2xl": "20px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Noto Sans SC', 'Plus Jakarta Sans', sans-serif; background-color: #fff8f2; }
+        .figma-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-on-surface bg-background">
+<!-- Standardized TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-md shadow-[0_4px_32px_rgba(30,27,22,0.04)] h-16">
+<div class="flex items-center justify-between px-6 h-full w-full">
+<button class="text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200" style="">
+<span class="material-symbols-outlined" style="">menu</span>
+</button>
+<h1 class="text-[#334537] dark:text-[#faf2ea] font-['Manrope'] font-black tracking-widest text-lg" style="">汤姆的花园<div>TOM'S GARDEN</div></h1>
+<div class="flex items-center gap-4">
+<button class="text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200" style="">
+<span class="material-symbols-outlined" style="">search</span>
+</button>
+<button class="text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200" style="">
+<span class="material-symbols-outlined" style="">shopping_basket</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-28 px-5 space-y-12">
+<!-- Section 1: Hero Banner -->
+<section class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden group figma-shadow" id="hero">
+<img alt="Garden Bistro" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl7uFntzUB0-R1qHizmtZyzqlGBLyjIYJ-RCMeW7Ay036H1lwlRnSpoWmTGbiLbSYrMfrnFMO7LSKzEB9bql3JoXgtxf7MsCg4GqbZoa-Oi4eAcf-gl4h0SPei2n-x0klkjbV0kn9NGp8fkbeg2FzAPFcxAbgawZXPLup8giL9M0khFGg7SLShRh9uC0wcLbekTHG5VUJsYxl_0TTprheffZsstM7e-atGFmU-zFovOGb0Ls4I2EL54B1pBNCW8jH12zlT4f26s6L7" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6">
+<p class="text-white/80 font-headline text-[10px] font-bold tracking-[0.2em] mb-2 uppercase" style="">Seasonal Collaboration</p>
+<h2 class="text-white text-3xl font-headline font-bold leading-tight" style="">Tom's Garden ×<br>花园轻西餐</h2>
+<div class="mt-4 flex gap-2">
+<span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase" style="">Limited Menu</span>
+<span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase" style="">New Opening</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Quick Action Grid -->
+<section class="grid grid-cols-2 gap-4" id="quick-actions">
+<button class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors figma-shadow border border-outline-variant/10" style="">
+<div class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined" style="">restaurant</span>
+</div>
+<span class="font-body font-semibold text-sm text-on-surface" style="">订位用餐</span>
+</button>
+<button class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors figma-shadow border border-outline-variant/10" style="">
+<div class="w-12 h-12 bg-secondary text-white rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined" style="">potted_plant</span>
+</div>
+<span class="font-body font-semibold text-sm text-on-surface" style="">园艺商城</span>
+</button>
+<button class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors figma-shadow border border-outline-variant/10" style="">
+<div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined" style="">event_available</span>
+</div>
+<span class="font-body font-semibold text-sm text-on-surface" style="">活动报名</span>
+</button>
+<button class="bg-surface-container-low p-6 rounded-2xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container-high transition-colors figma-shadow border border-outline-variant/10" style="">
+<div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined" style="">architecture</span>
+</div>
+<span class="font-body font-semibold text-sm text-on-surface" style="">设计咨询</span>
+</button>
+</section>
+<!-- Section 3: Brand Intro -->
+<section class="text-center space-y-4" id="brand-intro">
+<h3 class="font-headline font-extrabold text-primary tracking-widest text-lg" style="">THE LIVING LAB</h3>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed max-w-xs mx-auto" style="">
+            汤姆的花园生活馆不仅仅是一个空间，它是一个不断生长的生态系统。在这里，我们将自然、美学与日常社交无缝连接。
+        </p>
+<div class="flex justify-center items-center gap-8 pt-4">
+<div class="text-center">
+<div class="text-secondary font-headline font-extrabold text-2xl" style="">15+</div>
+<div class="text-[10px] text-outline font-bold uppercase tracking-wider" style="">Garden Zones</div>
+</div>
+<div class="h-10 w-px bg-outline-variant/30"></div>
+<div class="text-center">
+<div class="text-secondary font-headline font-extrabold text-2xl" style="">200+</div>
+<div class="text-[10px] text-outline font-bold uppercase tracking-wider" style="">Plant Species</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Weekly Recommendation -->
+<section id="recommendation">
+<div class="flex items-center justify-between mb-5">
+<h4 class="font-headline font-bold text-primary text-lg" style="">本周策划</h4>
+<button class="text-secondary text-xs font-bold uppercase tracking-wider" style="">查看全部</button>
+</div>
+<div class="bg-surface-container-high rounded-2xl p-3 flex items-center gap-4 border border-outline-variant/10 figma-shadow">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden">
+<img alt="Pottery" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK8MG_addVkgIQ3MacyxyJ4hB7WEUoTqFS_yTT53j2p3NA5B-OtgQqKlGmysd13_IjpIPHkTqiKPrbLzwn-os1reWhKAufq5rQ_1FpzPlqQrDr5Hh99XWWN99zH2M68mh7Pr9nwfi_tnco_eKJpQ2PeLQ32VOwv-wyN0ZIHhpLepnBS1fkFq9jrJFADW6RTk9Fg8OJe-ZaN5ipulb7SEZcCF-kj_-CbD5NDxLcRmoaWOVERIE3hL5wkS31gw27yTBqgjwuXZyKCPWO" style="">
+</div>
+<div class="flex-1 py-1">
+<span class="inline-block text-[10px] font-bold text-secondary uppercase bg-white/50 px-2 py-0.5 rounded-sm mb-1" style="">季节限定</span>
+<h5 class="font-headline font-bold text-on-surface text-base" style="">手作粗陶花器</h5>
+<p class="text-on-surface-variant text-xs mt-0.5" style="">给植物一个温暖的家</p>
+<div class="mt-2 text-primary font-bold" style="">¥199.00</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Space Gallery -->
+<section id="gallery">
+<div class="flex items-center justify-between mb-5">
+<h4 class="font-headline font-bold text-primary text-lg" style="">空间艺廊</h4>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 -mx-5 px-5 snap-x no-scrollbar">
+<div class="snap-start shrink-0 w-64 rounded-2xl overflow-hidden border border-outline-variant/20 bg-white figma-shadow">
+<img alt="Terrace" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWYmy7z4gKocIHtoYmYsl3_snMFdv6t2H5PKr0bZpRGxD9t3Xh4LJL-Orr9D1XgKXhmr-j3nYJkDir9ic4G-BSSpR0KDHsvypJFJcakHUJrsfLw2CgbLcC113jO8iBYMgLooAqPXt7G4-d4ocMVzDtekMaoQ740QjyQlpsW5-e-lQZMFW4Rmaf1vhD36Y37MjHO6tFRx53TLNn_pfr5sLB6jBHWJwCfqyFglEU_RNQ87ru6apyeEcVAdchnufIpHETHXeyL-ahxMJW" style="">
+<div class="p-4">
+<span class="text-[10px] text-secondary font-bold uppercase" style="">户外露台</span>
+<p class="text-sm font-bold text-on-surface mt-1" style="">沉浸式森林氧吧</p>
+</div>
+</div>
+<div class="snap-start shrink-0 w-64 rounded-2xl overflow-hidden border border-outline-variant/20 bg-white figma-shadow">
+<img alt="Workshop" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD0RBL3CB9V2QeMAP22J62Q5FH9tsqeQhBgxjRF6LGPNSYqf6wNa2Seb9jW9cVHkgoydePkT5-McncJAxWj_SkxH2mknutqTuBUYaP77bdjBjKccvmbQnbVMejL34uPYvMpN-fpLggNMJ6qXPigNpIO5z3_vfrNr-U6yrhcQtchGHpCEseUN7EEqWcn7xKam5DKiYUyFal9jFWFFMuGhvEZl_wE-MGRhbNvmdEhw_DNb3_FFLHr-g6ENj4yxRArkzoNegIzNBJ0Gwk" style="">
+<div class="p-4">
+<span class="text-[10px] text-secondary font-bold uppercase" style="">植物工坊</span>
+<p class="text-sm font-bold text-on-surface mt-1" style="">发现绿意之美</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Hot Products -->
+<section id="products">
+<div class="flex items-center justify-between mb-5">
+<h4 class="font-headline font-bold text-primary text-lg" style="">心选好物</h4>
+<span class="material-symbols-outlined text-primary" style="">arrow_forward</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-3">
+<div class="aspect-square rounded-2xl overflow-hidden bg-white border border-outline-variant/10 figma-shadow">
+<img alt="Cactus" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6S9HNvtoQ7-cW9Rxgy3G7gA1FaGYZaJW2aKBbYeH-JH_ZK38vfvyggISkbVf5PQeJJcnJH_KIFezzwdJzxNKHzS0UlEJYVRS9kyZh-N0eTbJvgE57pUBglZkx1pkjDNu1Da7GuZu_GzQrHYzhY2gdf5bofMCo-_WmiMSrUGswo0W3IVvb_TkcVWDDwnIqa0BIzvHgFTUWVAJNB5a--Eoozz0gMCkmUtXqEvRh4tHsXPgjA7DA59b6fsLWNVEoFXcjuHFIIZy4sHZT" style="">
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface" style="">迷你多肉景观</p>
+<p class="text-[10px] text-outline italic" style="">Easy Care</p>
+<p class="text-secondary font-bold text-sm mt-1" style="">¥58.00</p>
+</div>
+</div>
+<div class="space-y-3">
+<div class="aspect-square rounded-2xl overflow-hidden bg-white border border-outline-variant/10 figma-shadow">
+<img alt="Plant" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKl9nm7YrZJXNXMO4cFIbsw956hODj90BbtU2wdJVpEhFgxxCLsGvjWXlJ0Ar5vaFOhFD2iWJzPMRGqfkYaHmI3QbA2lq33juz0IAP_W-HX21Z4qnb4nEvyHQPIpqeuZ-32TqJ0iN3w3_Tpeek8FfvYGp-oVkSP-MwVLTiVGYr-h2kKMM8RXJ9w1PcHEZLGPUt8hakg3eznyIfbefibxZTwME6HYZ3dT2GTX54l0BB75ATJBUSQolm94cIdrQWjlwhCMX4hTyYSUOT" style="">
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface" style="">北欧风大叶琴叶榕</p>
+<p class="text-[10px] text-outline italic" style="">Statement Piece</p>
+<p class="text-secondary font-bold text-sm mt-1" style="">¥299.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Professional Services -->
+<section class="space-y-5" id="services">
+<h4 class="font-headline font-bold text-primary text-lg" style="">专业服务</h4>
+<div class="space-y-3">
+<div class="bg-surface-container-low p-4 rounded-2xl flex items-center justify-between border border-outline-variant/10 group active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary figma-shadow">
+<span class="material-symbols-outlined" style="">yard</span>
+</div>
+<div>
+<p class="font-bold text-sm" style="">私人花园定制设计</p>
+<p class="text-[10px] text-outline uppercase font-medium" style="">Landscape Design</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" style="">chevron_right</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl flex items-center justify-between border border-outline-variant/10 group active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary figma-shadow">
+<span class="material-symbols-outlined" style="">local_florist</span>
+</div>
+<div>
+<p class="font-bold text-sm" style="">企业绿植租赁及维护</p>
+<p class="text-[10px] text-outline uppercase font-medium" style="">Corporate Rental</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" style="">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Section 8: Recent Events -->
+<section id="events">
+<h4 class="font-headline font-bold text-primary text-lg mb-5" style="">近期活动</h4>
+<div class="bg-white rounded-2xl overflow-hidden border border-outline-variant/10 figma-shadow">
+<div class="relative h-48">
+<img alt="Workshop Hands" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFCsm4eRX9uPHlMXPt9fvrHVcWYWMKGYex5qfvLH4p6OidgrIRVhXzl47bTyOjSsOkNioZzXXH98Zebwhg8va31SiXbqbRvQY86rCG11loHVLZew9ER6jmZkB05TZAilg9Td7S4OKIjvDkGWtvEXPCYxzfpTYL3XnglaAxNmki6Irjn19-oHP27kYuyFBE3kk0AHjcORPF-RltUgfQDSu7EMfRL8kbVE2Y2-Ar3f7-LxCEGLVE7wXPZubCuC5wGXqmhQsTL2Oo4L9B" style="">
+<div class="absolute top-4 left-4 bg-primary text-white text-center py-1.5 px-3 rounded-xl border border-white/20 backdrop-blur-sm">
+<span class="block text-xl font-extrabold leading-none" style="">15</span>
+<span class="block text-[8px] font-bold tracking-widest uppercase mt-0.5" style="">Oct</span>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<div>
+<h5 class="font-headline font-bold text-lg text-primary" style="">秋日花艺手作工坊</h5>
+<div class="flex items-center gap-4 mt-2">
+<span class="flex items-center gap-1.5 text-[10px] text-on-surface-variant font-semibold" style="">
+<span class="material-symbols-outlined text-xs" style="">schedule</span> 14:00 - 16:30
+                        </span>
+<span class="flex items-center gap-1.5 text-[10px] text-on-surface-variant font-semibold" style="">
+<span class="material-symbols-outlined text-xs" style="">group</span> 仅限10人
+                        </span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-3.5 rounded-xl font-bold text-sm hover:opacity-90 active:scale-[0.98] transition-all" style="">立即预约报名</button>
+</div>
+</div>
+</section>
+<!-- Section 9: Case Studies -->
+<section id="cases">
+<h4 class="font-headline font-bold text-primary text-lg mb-5" style="">设计案例</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-3">
+<div class="rounded-2xl overflow-hidden aspect-[3/4] border border-outline-variant/10">
+<img alt="Case 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNHsvl7PGYD6sieP5esIYv6rltsWaVhnMP65uAM5zlO9jVy5I3QrUoOCkYOdxQLPlTbPOUX1SWL9Op5iV3Ka3vUz6sqCwyHcFmjv_Yg3GcQvvOET4irE8vtKsGnQYNMSs0G5707H1eL7660G_Az_RI60N9VxyH7vEaWzPLzghKGPfznG2bdcWkdrjx-oCUn0wV0qZu2OE2GPhCyEvpU2ETDuW8KGsiMEHA73mPyeeJgbO1lPV0Q9C7iluLr-QNq30fQVQ60TqUZsZA" style="">
+</div>
+<p class="font-bold text-xs text-on-surface" style="">CBD公寓阳台改造</p>
+</div>
+<div class="space-y-3 pt-6">
+<div class="rounded-2xl overflow-hidden aspect-square border border-outline-variant/10">
+<img alt="Case 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-QPb3-dqtdFS7jNdwEPu1Iqv-9uT1kTSA1g1XBOyG36BWiBNLkRs9VdoJvfkgC_WqhTd_EXTpYdtnjX4CDkbQjI1IWHZLNkXb_Rg3hsE51ncFEkpqbAeGjv4bSSfZMxBdOcRJWL1AUZ8h_joaVQySFl-r5XUHokdvmtyO_eEagF2XtZG605YfWfPQpV0jsEwXGcYd-3ufo70PicnaQ7FpLwkwRl1ltN9cWP2Gw2zojLV5it8bOqG0iZ76l_ZT8FWYB-5VIRR3von0" style="">
+</div>
+<p class="font-bold text-xs text-on-surface" style="">庭院微景观设计</p>
+</div>
+</div>
+</section>
+<!-- Section 10: Store Footer / Contact -->
+<section class="bg-surface-container-low rounded-2xl p-6 space-y-6 border border-outline-variant/10 figma-shadow" id="contact">
+<h4 class="font-headline font-bold text-primary text-lg" style="">联系我们</h4>
+<div class="rounded-xl overflow-hidden h-36 bg-surface-variant/20 border border-outline-variant/20">
+<img alt="Map" class="w-full h-full object-cover opacity-60 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFMUOZ3eHX12cMnhmQeUJC4uBcjIFjJuh-TAlgYHZ3T-WhPkIF3W2coKWk_lbaBogQn_mXpLVhRRa4mHUj7wLd4fKq3i_U4ceRrZq-uprsv_7sBPve0jt8CAOANvaUh2gdFBUvq3nFYiqFOJQE1g-BYQ2HUyt45LkeD0Xqt9jWAisH9UrcjK3TaGNh-IGn-RPhoRKqT4qSzV8AdCEKXmIlhgtb6uOFDHlrNmki2r47SNAbwRYMAZl8EbTDESRTO5jHTL-E_6ePz8AU" style="">
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-base" style="">location_on</span>
+<p class="text-[13px] font-medium leading-relaxed" style="">浙江省温州市<br>汤姆的花园生活馆</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-base" style="">call</span>
+<p class="text-[13px] font-medium" style="">158-577-44331</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-base" style="">schedule</span>
+<p class="text-[13px] font-medium" style="">周一至周日 08:00 - 21:00</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="border border-primary text-primary h-11 rounded-xl text-xs font-bold hover:bg-primary hover:text-white transition-all" style="">拨打电话</button>
+<button class="bg-primary text-white h-11 rounded-xl text-xs font-bold hover:opacity-90 transition-all" style="">一键导航</button>
+</div>
+</section>
+</main>
+<!-- Standardized BottomNavBar -->
+<nav class="fixed bottom-0 w-full rounded-t-[1.5rem] z-50 pb-safe bg-[#fff8f2]/90 dark:bg-[#1e1b16]/90 backdrop-blur-xl shadow-[0_-4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex justify-around items-center h-20 px-4 w-full">
+<button class="flex flex-col items-center justify-center text-[#334537] dark:text-[#ffd79b] bg-[#4a5d4e]/10 dark:bg-[#ffd79b]/10 rounded-xl px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" style="">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">home_growth</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight" style="">首页</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" style="">
+<span class="material-symbols-outlined" style="">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight" style="">商城</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" style="">
+<span class="material-symbols-outlined" style="">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight" style="">活动</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" style="">
+<span class="material-symbols-outlined" style="">person_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight" style="">我的</span>
+</button>
+</div>
+</nav>
+</body></html>

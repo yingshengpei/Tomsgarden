@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#b7ccb9",
+              "on-secondary-container": "#7a5c2b",
+              "on-primary": "#ffffff",
+              "secondary-container": "#ffd79b",
+              "surface-container-highest": "#e9e1d9",
+              "outline-variant": "#c3c8c1",
+              "on-secondary-fixed-variant": "#5d4213",
+              "on-surface-variant": "#434843",
+              "surface-tint": "#506354",
+              "surface-container-high": "#eee7df",
+              "on-surface": "#1e1b16",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#d7e7d7",
+              "surface-bright": "#fff8f2",
+              "primary-fixed": "#d3e8d5",
+              "surface-container-low": "#faf2ea",
+              "on-error-container": "#93000a",
+              "inverse-primary": "#b7ccb9",
+              "on-secondary-fixed": "#281800",
+              "error-container": "#ffdad6",
+              "inverse-on-surface": "#f7f0e7",
+              "on-primary-fixed-variant": "#394b3d",
+              "on-background": "#1e1b16",
+              "primary": "#334537",
+              "error": "#ba1a1a",
+              "secondary": "#775928",
+              "outline": "#737872",
+              "on-primary-fixed": "#0e1f13",
+              "tertiary-container": "#4e5c50",
+              "primary-container": "#4a5d4e",
+              "surface": "#fff8f2",
+              "background": "#fff8f2",
+              "surface-dim": "#e0d9d1",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#e8c086",
+              "surface-container": "#f4ede4",
+              "on-tertiary-container": "#c4d4c4",
+              "surface-variant": "#e9e1d9",
+              "on-primary-container": "#c0d5c2",
+              "on-error": "#ffffff",
+              "inverse-surface": "#33302a",
+              "tertiary-fixed-dim": "#bbcbbb",
+              "tertiary": "#374539",
+              "secondary-fixed": "#ffdeae",
+              "on-tertiary-fixed": "#121e15",
+              "on-tertiary-fixed-variant": "#3c4a3f"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body { background-color: #fff8f2; color: #1e1b16; font-family: "Source Han Sans", "Plus Jakarta Sans", sans-serif; }
+      .text-balance { text-wrap: balance; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen">
+<!-- TopAppBar: small_center_aligned -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-md shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<button class="text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold tracking-wider text-lg text-[#334537] dark:text-[#faf2ea]">设计与服务</h1>
+<button class="text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Section -->
+<section class="px-6 pt-12 md:pt-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-7">
+<span class="font-label text-secondary font-semibold tracking-widest text-xs uppercase mb-4 block">作品案例与专业实力</span>
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold text-primary leading-[1.1] mb-6 text-balance">为生活注入自然的灵魂</h2>
+<p class="text-on-surface-variant text-lg max-w-xl leading-relaxed">从阳光露台到大型商业景观，我们为您打造会呼吸、有生命力的自然空间，重建人与自然的连接。</p>
+</div>
+<div class="md:col-span-5 flex justify-end">
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high relative">
+<img alt="Modern minimalist rooftop garden" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjPf-IZwvuCoy3kgem5UhRzg8dXZ6DOd3tZKxthSRxDxKeSICGlR127mONvYFWIqY8_tvYfPqWSLwftqrZyXRBhgBiZ2DI2FW1zZDK61XKhFDwMnxoxscwn4eG5q30poQzTmzEdQdPusjcOYOUOiDeLXZH1OTrhYAll3zGKUQpwKkHOWJlZsPeFHWznfioI85nZEX59fpiKDaKxsiYhWfDww6B4w7uPMRcOJWX9TwOWpGp0eAVn0UykQjjQ7wwLOGZ5a6mgIeWjtiQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Switcher -->
+<section class="mt-16 px-6 overflow-x-auto no-scrollbar max-w-7xl mx-auto">
+<div class="flex space-x-3 md:space-x-4 min-w-max">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-medium text-sm transition-all shadow-sm">全部案例</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-all">阳台花园</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-all">庭院景观</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-all">儿童自然空间</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-all">商业绿化</button>
+</div>
+</section>
+<!-- Project Grid -->
+<section class="mt-10 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group cursor-pointer lg:col-span-2">
+<div class="aspect-[16/10] rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="Luxury courtyard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByJYdjsMIJmmo5tDiAq-6D9pprP_gIKLzieyf7tGJqQrIcYYvYy9icNt4Lg8LP1ey_MV6Dc1T5WzDHykiRgkyJqpziph56-Q-cLtjJFWcxe5Xs3efwHEXbB-rIAi_O8D9bbxtma8IUdQlHLd86k7_xVXKFa-hjBraM9MBm8gxGDBNId12L1mlVpymCl1-k5Vz1LnV-PT8MwVim-pCcVK_AVK5tNBzRzXO8T333rL20Pek7mSwcACtiKJmlwSEnXGGy2WG4nr5Yjzgq"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<span class="inline-block px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider mb-2">庭院景观</span>
+<h3 class="font-headline text-2xl font-bold text-primary">禅意静谧花园</h3>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="Balcony garden" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB901KE2yxMAPG0icGw_Z2q3IFQjVdM1Xxba5YaAI8y5CIyoty7Oj-iQmJRPWS0ZTtKszWV_ykgMAcHibz4ZM6hdFtIqqUp1k9WFGbjolS4R4KHB-N_oB-utx-5La4zEH1qDHwuPPp1MTYl-rnMcZdU1VYKsrwO_G4q8WCHj3BthOGGZDK1S3tkB1emDISbSat2rzzvBaBKYYA2U7kbMnftdHgc1gsG9iozhbzwwodB7FbpHn5AosUcWhJ-NNQ5VqL08GKyxmqIDIV"/>
+</div>
+<div>
+<span class="inline-block px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider mb-2">阳台花园</span>
+<h3 class="font-headline text-2xl font-bold text-primary">天空之境露台</h3>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="Child-friendly garden" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Ap9rYzqXvZfDX_QmsazjRisnzEu8_KHZIMo8qiPWdWlFHLN63XjvMR7Cnps19GpUB42Nb0EjMFpau_-ot_7ncZ3T1swydVizwzeOABzmNuF0KcaMdaKC8ix8H-4YBaxLAIP7q4dPOc0SAzQADjIZhvmgc9AGYAmWQw_o13JeluOdId6-HEnRR7UCMymHWmxHzFbSliIv2zd4CtduLOYCMEwhXPAbAsWSnKm1vqeep6gEppG3cH58BEA3qlO5V8q5ahOmYQ9cjqf0"/>
+</div>
+<div>
+<span class="inline-block px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider mb-2">儿童自然空间</span>
+<h3 class="font-headline text-2xl font-bold text-primary">小森林实验室</h3>
+</div>
+</div>
+<div class="group cursor-pointer lg:col-span-2">
+<div class="aspect-[16/10] md:aspect-[21/9] rounded-xl overflow-hidden bg-surface-container mb-4">
+<img alt="Office greening" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh46aAWWWa1UIBtS5J6zE5UgHGAWBTMnImFQo5AAcBGuiUjcgDj3bvLVwFI-5l3Kje1Pm1Th4CljPHmazYrv8K4l-oneRwM7sPaChXyLlYq-9uSX48TYcKkz1c3tBpm6SFfWhHxkMy0grJNVfgKkGYGyJKxkwCDd_FHt5c38HS7jyyeBY7ebMMj1vLu9Ch63L8Qq_zHiiyI4q5l2tVAiEq4IggItiQ14UhKgvR5ez4j4c5tQw-yoArOIT3bNCmEP_fKYiYZXJ2GgDm"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<span class="inline-block px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider mb-2">商业绿化</span>
+<h3 class="font-headline text-2xl font-bold text-primary">生机办公空间</h3>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="mt-24 py-20 bg-surface-container-low">
+<div class="px-6 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-4 italic underline decoration-secondary-container underline-offset-8 decoration-4">我们的服务流程</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">从灵感的初次闪现到花园的长期养护，我们为您提供全周期的专业服务。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">chat_bubble</span>
+</div>
+<h4 class="font-headline font-bold text-xl text-primary mb-3">设计咨询</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">通过深度沟通，挖掘您的需求、场地潜力及生活方式。</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">architecture</span>
+</div>
+<h4 class="font-headline font-bold text-xl text-primary mb-3">方案设计</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">将创意转化为详细蓝图、3D效果图及植物配置方案。</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">foundation</span>
+</div>
+<h4 class="font-headline font-bold text-xl text-primary mb-3">工程施工</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">使用优质材料与可持续工艺进行专业化落地施工。</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.02)] border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">eco</span>
+</div>
+<h4 class="font-headline font-bold text-xl text-primary mb-3">后期养护</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">提供专业的季节性养护指导，确保您的花园生机勃勃。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tom's Children | Seven Spaces Feature Card -->
+<section class="mt-24 px-6 max-w-7xl mx-auto">
+<div class="group relative overflow-hidden rounded-[2rem] bg-[#fdfaf5] border border-secondary-container/30 flex flex-col md:flex-row shadow-[0_20px_50px_rgba(119,89,40,0.05)]">
+<div class="md:w-1/2 p-10 md:p-14 flex flex-col justify-center relative z-10">
+<span class="font-label text-secondary font-bold tracking-[0.2em] text-xs uppercase mb-4 flex items-center">
+<span class="w-8 h-[1px] bg-secondary mr-3"></span>
+        儿童成长场景设计专题
+      </span>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6">汤姆儿童｜七大空间</h2>
+<p class="text-on-surface-variant text-base md:text-lg mb-10 leading-relaxed max-w-md">围绕沙水池、社会性区域、种植园、孩童拓展区、过道改造等空间体系，探索更友好的儿童成长场景。</p>
+<div>
+<button class="bg-primary text-on-primary px-8 py-3.5 rounded-full font-bold text-sm hover:bg-tertiary transition-all hover:translate-x-1 flex items-center gap-2 group/btn">
+          查看专题
+          <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<div class="md:w-1/2 relative min-h-[320px] overflow-hidden">
+<img alt="Children's natural space design" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Ap9rYzqXvZfDX_QmsazjRisnzEu8_KHZIMo8qiPWdWlFHLN63XjvMR7Cnps19GpUB42Nb0EjMFpau_-ot_7ncZ3T1swydVizwzeOABzmNuF0KcaMdaKC8ix8H-4YBaxLAIP7q4dPOc0SAzQADjIZhvmgc9AGYAmWQw_o13JeluOdId6-HEnRR7UCMymHWmxHzFbSliIv2zd4CtduLOYCMEwhXPAbAsWSnKm1vqeep6gEppG3cH58BEA3qlO5V8q5ahOmYQ9cjqf0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#fdfaf5] via-[#fdfaf5]/10 to-transparent md:block hidden"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#fdfaf5] via-transparent to-transparent md:hidden"></div>
+<!-- Decorative element -->
+<div class="absolute bottom-6 right-6 w-20 h-20 bg-secondary-container/20 rounded-full blur-2xl"></div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-24 px-6 max-w-7xl mx-auto">
+<div class="relative overflow-hidden rounded-3xl bg-primary px-8 py-16 md:p-20 text-center">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full scale-150" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.7,-64.1C61.4,-56.3,71.7,-41.8,77.3,-25.9C82.9,-10.1,83.9,7.1,77.8,21.5C71.7,35.8,58.6,47.4,44.2,56.7C29.8,66,14.9,73.1,-0.5,73.8C-15.9,74.5,-31.8,68.8,-45.5,59.3C-59.2,49.8,-70.7,36.5,-76.3,21.1C-81.8,5.7,-81.4,-11.7,-74,-26C-66.6,-40.4,-52.1,-51.7,-38,-59.1C-23.9,-66.6,-11.9,-70.1,3.4,-74.8C18.7,-79.5,34,-85.4,47.7,-64.1Z" fill="#ffffff" transform="translate(200 200)"></path>
+</svg>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold text-on-primary mb-6">准备好打造您的梦想花园了吗？</h2>
+<p class="text-primary-fixed-dim max-w-2xl mx-auto text-lg mb-10">预约主理设计师一对一咨询，开启您的花园定制之旅。</p>
+<button class="bg-secondary-container text-on-secondary-fixed px-10 py-4 rounded-full font-bold text-lg hover:bg-secondary-fixed transition-all hover:scale-105 active:scale-95 shadow-xl">立即预约设计咨询</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar: label_icon -->
+<nav class="fixed bottom-0 w-full rounded-t-[1.5rem] z-50 pb-safe bg-[#fff8f2]/90 dark:bg-[#1e1b16]/90 backdrop-blur-xl shadow-[0_-4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex justify-around items-center h-20 px-4 w-full">
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">home_growth</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">商城</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537] dark:text-[#ffd79b] bg-[#4a5d4e]/10 dark:bg-[#ffd79b]/10 rounded-xl px-4 py-1 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">活动</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">person_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight">我的</span>
+</a>
+</div>
+</nav>
+<!-- Contextual FAB -->
+<div class="fixed right-6 bottom-24 md:bottom-8 z-40">
+<button class="w-14 h-14 rounded-2xl bg-primary text-on-primary shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+</button>
+</div>
+</body></html>

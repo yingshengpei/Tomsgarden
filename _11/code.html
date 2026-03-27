@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>园艺商城</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#374539",
+                        "surface-variant": "#e9e1d9",
+                        "on-surface-variant": "#434843",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#0e1f13",
+                        "outline": "#737872",
+                        "secondary-fixed": "#ffdeae",
+                        "on-secondary-fixed": "#281800",
+                        "secondary": "#775928",
+                        "on-tertiary-fixed": "#121e15",
+                        "tertiary-fixed": "#d7e7d7",
+                        "tertiary-container": "#4e5c50",
+                        "inverse-surface": "#33302a",
+                        "outline-variant": "#c3c8c1",
+                        "secondary-container": "#ffd79b",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1e1b16",
+                        "on-background": "#1e1b16",
+                        "surface-container": "#f4ede4",
+                        "tertiary-fixed-dim": "#bbcbbb",
+                        "on-tertiary-container": "#c4d4c4",
+                        "inverse-primary": "#b7ccb9",
+                        "primary-fixed": "#d3e8d5",
+                        "secondary-fixed-dim": "#e8c086",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#4a5d4e",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#faf2ea",
+                        "background": "#fff8f2",
+                        "surface": "#fff8f2",
+                        "on-primary-fixed-variant": "#394b3d",
+                        "surface-tint": "#506354",
+                        "surface-container-high": "#eee7df",
+                        "inverse-on-surface": "#f7f0e7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#7a5c2b",
+                        "surface-dim": "#e0d9d1",
+                        "surface-container-highest": "#e9e1d9",
+                        "surface-bright": "#fff8f2",
+                        "on-tertiary-fixed-variant": "#3c4a3f",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4213",
+                        "primary-fixed-dim": "#b7ccb9",
+                        "primary": "#334537",
+                        "on-primary-container": "#c0d5c2"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "Noto Sans SC"],
+                        "body": ["Plus Jakarta Sans", "Noto Sans SC"],
+                        "label": ["Plus Jakarta Sans", "Noto Sans SC"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-md shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<span class="material-symbols-outlined text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer" data-icon="menu">menu</span>
+<h1 class="font-['Manrope'] font-bold tracking-wider text-lg text-[#334537] dark:text-[#faf2ea]">园艺商城</h1>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer" data-icon="search">search</span>
+<div class="relative">
+<span class="material-symbols-outlined text-[#334537] dark:text-[#faf2ea] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-secondary rounded-full"></span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6">
+<!-- Horizontal Categories -->
+<section class="mb-10 overflow-x-auto hide-scrollbar flex gap-6 items-center">
+<button class="flex-shrink-0 text-sm font-bold border-b-2 border-primary pb-1 text-primary">全部</button>
+<button class="flex-shrink-0 text-sm font-medium text-outline hover:text-primary transition-colors">绿植</button>
+<button class="flex-shrink-0 text-sm font-medium text-outline hover:text-primary transition-colors">精选盆器</button>
+<button class="flex-shrink-0 text-sm font-medium text-outline hover:text-primary transition-colors">园艺工具</button>
+<button class="flex-shrink-0 text-sm font-medium text-outline hover:text-primary transition-colors">生活礼盒</button>
+<button class="flex-shrink-0 text-sm font-medium text-outline hover:text-primary transition-colors">餐饮套餐</button>
+</section>
+<!-- Featured Recommendations (Special Offer) -->
+<section class="mb-12">
+<div class="relative w-full h-[420px] rounded-xl overflow-hidden group">
+<img alt="Featured Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high-end modern minimalist plant stand in a sun-drenched architectural space with soft shadows and botanical textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9HIIqGedB2iNcYDfzKfFv6BL0rfAtQCV6HN_UU0n6dbtpXRbGkqzVkBnr7bGZwZf-2r92dE39VhIz02WKBgS_WllH76PgXrlySV1FOxM1D76WpkUTS9XV1-arTB_vqdPO5mMmQa19AjXWtCD-D24duIdE7XUCxcq0WZ1TJeyiWneNu7VR5A-mxB6seyEgHJehrBFzxr3SJEOr7MwOMaTH29jhiOp8k20aN1gX_SPYVKgFSdoXkIsFOLqTcAUfaIuYHs4ZTdE4juvl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block px-3 py-1 mb-3 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest uppercase">特别推荐</span>
+<h2 class="text-3xl font-headline font-bold text-white mb-2 leading-tight">Modern Minimalist<br/>实木花架系列</h2>
+<div class="flex justify-between items-end">
+<p class="text-white/90 font-headline text-lg">¥ 580.00</p>
+<button class="bg-white text-primary px-8 py-3 rounded-full text-sm font-bold hover:bg-surface-container-low transition-colors shadow-xl active:scale-95 duration-200">
+                            立即购买
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Title -->
+<div class="flex justify-between items-end mb-8">
+<h3 class="text-2xl font-headline font-bold text-primary tracking-tight">为您精选</h3>
+<span class="text-xs font-medium text-secondary tracking-widest uppercase">Seasonal Picks</span>
+</div>
+<!-- Product Grid (2 Columns) -->
+<div class="grid grid-cols-2 gap-x-5 gap-y-10">
+<!-- Product 1 -->
+<div class="flex flex-col gap-4">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative group">
+<img alt="Monstera Deliciosa" class="w-full h-full object-cover" data-alt="close-up of a vibrant healthy monstera deliciosa plant in a cream ceramic pot against a neutral wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdTbO11r4qH5Zgerh6MYfOi2IYEOTY6V5UHAwA-StnKzo36wADweZDoFWmvV0qF3nRFyD0-u4iWzUP-j-HEDW2yMUhQqBTnc_3TlFEloaLtBhIM1cMSCyBj3GA3bnMVcufXI_9KmycMY50fnPw1CGSlT8l7M4sCuGhavCS3Vi1XJnBAJ3JbL6DTUVyzqRJDwbo5ZiE0OSMOhj3diEowYhPMDG1M-ONP3nHKTW50Tobj7CrP8UPy8JKJb_0Axd2wCnzrBWZonnkvCCa"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-base">Monstera Deliciosa</h4>
+<p class="text-outline text-xs mt-1">龟背竹 · 极易养护</p>
+<p class="text-primary font-bold mt-2">¥ 128.00</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col gap-4">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative group">
+<img alt="Handmade Ceramic Pot" class="w-full h-full object-cover" data-alt="artisanal hand-crafted ceramic plant pot with organic texture and earthy glaze colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcOEt0Uh8NwUYfmo5ZIO3ycTgJCA_FuB5GOAmjSbvom57njXsSF2GdBTiuiLYDmIBipSn_nNYThuXzSsXkZBomfePg3cDSKpkAGnf9hDQFTbsp6z1mQPE0EDtIVvnKGDadnWEtC1umAIZP3rnNoIKMHx5GEsKYcFNEB4YD73SZNVpVwgR0x5fwIMkv7TZf1_0LmpgIfPrPPU7niYm2YwntnmKnLL_2iTFJp2TNm_t6zuUwvQABTJqJYYc_NiWxFGm24dwfAIKXFFG"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-base">Ceramic Vessel</h4>
+<p class="text-outline text-xs mt-1">手工粗陶 · 自然肌理</p>
+<p class="text-primary font-bold mt-2">¥ 89.00</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col gap-4">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative group">
+<img alt="Gardening Tool Set" class="w-full h-full object-cover" data-alt="high-quality brass and wood gardening hand tools neatly arranged on a clean work table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjkPmwNVJjm6TRsT-WYRNeSIqi6YNBy9lnoe_7wlKFSMaEeeufuZlF54eFhTrAS47RkckFf4mn1xBv6fNhKF6Y_Nvo4juKlbeK7n2102az8FGH40y4IjvW-z7TVN7hGa1-6J---hKbrHWmhxUbHMu_j0KxTsxaQLPxL835SAIGLGfWH9ShHAym1hDcjfN7QZV2x7liFftByK-mOkxpT8NzrAVZWlrSWVBUH5JKvOfMeBQjJgl7nXT7hG8R8pabEdbTp7yNtWEGHn8h"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-base">Brass Tool Set</h4>
+<p class="text-outline text-xs mt-1">黄铜园艺三件套</p>
+<p class="text-primary font-bold mt-2">¥ 245.00</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col gap-4">
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative group">
+<img alt="Olive Tree" class="w-full h-full object-cover" data-alt="young olive tree in a terracotta pot with silvery-green leaves and cinematic morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOn6We4CeJXu02ZUgY8RembjRh-EnN5JmAXzY4p_4ppgHnR8CIbR9Yw0kqyF2su2EvzEPadDLnolDBJPpafjwWprloH9HwRhJSh-CbHBbnp-0it9gJgg_IHE8XHhxhxWE90nbfokeLvrJxsD1zzok07k3UJ3BCGJBGJIDw-0YTJCKY68IiIJa7M1J2JvamGiLerTWvbuQw1_YpEWkErzxbNabMDpJ22Sy9XuiKl8j61M2bmJql-TPQBQg81dR8U2tbcv2HHxeOe5OF"/>
+<button class="absolute bottom-4 right-4 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface text-base">Olive Tree</h4>
+<p class="text-outline text-xs mt-1">地中海油橄榄</p>
+<p class="text-primary font-bold mt-2">¥ 320.00</p>
+</div>
+</div>
+</div>
+<!-- Lifestyle Card (Editorial Break) -->
+<section class="mt-16 bg-surface-container-high rounded-xl p-8 flex flex-col items-center text-center">
+<span class="text-secondary font-label text-[10px] tracking-[0.2em] uppercase mb-4">Garden Journal</span>
+<h3 class="text-xl font-headline font-bold text-primary mb-4 leading-relaxed">让生活在植物中<br/>重新找到呼吸的节奏</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 px-4">探索我们的秋季特别礼盒，为亲友或自己送上一份绿色的慰藉。</p>
+<button class="text-primary font-bold text-sm border-b border-primary/30 pb-1 hover:border-primary transition-all">
+                查看园艺周志
+            </button>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full rounded-t-[1.5rem] z-50 pb-safe bg-[#fff8f2]/90 dark:bg-[#1e1b16]/90 backdrop-blur-xl shadow-[0_-4px_32px_rgba(30,27,22,0.04)]">
+<div class="flex justify-around items-center h-20 px-4 w-full">
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home_growth">home_growth</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight font-['Noto_Sans_SC']">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537] dark:text-[#ffd79b] bg-[#4a5d4e]/10 dark:bg-[#ffd79b]/10 rounded-xl px-4 py-1 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="storefront">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight font-['Noto_Sans_SC']">商城</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="event_note">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight font-['Noto_Sans_SC']">活动</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#334537]/60 dark:text-[#faf2ea]/60 px-4 py-1 hover:text-[#334537] dark:hover:text-[#ffd79b] transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person_2">person_2</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-tight font-['Noto_Sans_SC']">我的</span>
+</a>
+</div>
+</nav>
+</body></html>
