@@ -90,7 +90,50 @@
 window.addEventListener("DOMContentLoaded", async function() {
   const result = await window.PageLoader.apiCall('/product', { action: 'getProducts', data: {} });
   console.log("商品列表:", result);
+  
+  if (result.success && result.products) {
+    const products = result.products;
+    // 找到商品grid容器并动态渲染
+    const grid = document.querySelector('.grid.grid-cols-2.gap-x-5.gap-y-10');
+    if (grid) {
+      let html = '';
+      products.forEach(p => {
+        const name = p.name || '商品';
+        const price = p.price || 0;
+        const image = p.coverImage || 'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400';
+        const desc = p.subtitle || '';
+        html += `
+        <div class="flex flex-col gap-4">
+          <div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative group">
+            <img alt="${name}" class="w-full h-full object-cover" src="${image}" />
+            <button class="absolute bottom-4 right-4 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform" onclick="addToCart('${p._id}', '${name}', ${price})">
+              <span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+            </button>
+          </div>
+          <div>
+            <h4 class="font-headline font-bold text-on-surface text-base">${name}</h4>
+            <p class="text-outline text-xs mt-1">${desc}</p>
+            <p class="text-primary font-bold mt-2">¥ ${price.toFixed(2)}</p>
+          </div>
+        </div>`;
+      });
+      // 清空原有静态商品，插入API数据
+      grid.innerHTML = html;
+      console.log('✅ 商品已动态渲染，数量:', products.length);
+    }
+  }
 });
+
+// 添加到购物车函数
+function addToCart(productId, name, price) {
+  window.PageLoader.apiCall('/cart', { 
+    action: 'addToCart', 
+    data: { userId: 'user123', productId, productName: name, price, quantity: 1 } 
+  }).then(r => {
+    if (r.success) alert('已添加到购物车');
+    else alert('添加失败: ' + r.message);
+  });
+}
 </script>
 <body class="bg-background text-on-background selection:bg-secondary-container">
 <!-- Top Navigation Bar -->
