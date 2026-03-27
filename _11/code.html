@@ -5,8 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>园艺商城</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -80,7 +80,18 @@
             min-height: max(884px, 100dvh);
         }
     </style>
+<script src="../js/api.js"></script>
+<script src="../js/page-loader.js"></script>
+<script>window.addEventListener("DOMContentLoaded", async function() { const products = await productAPI.getProducts(); console.log("商品列表:", products); });</script>
 </head>
+<script src="../js/api.js"></script>
+<script src="../js/page-loader.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", async function() {
+  const result = await window.PageLoader.apiCall('/product', { action: 'getProducts', data: {} });
+  console.log("商品列表:", result);
+});
+</script>
 <body class="bg-background text-on-background selection:bg-secondary-container">
 <!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-md shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
