@@ -12,7 +12,7 @@
             min-height: 100vh;
             padding: 40px 20px;
         }
-        .container { max-width: 800px; margin: 0 auto; }
+        .container { max-width: 900px; margin: 0 auto; }
         h1 {
             text-align: center;
             color: #334537;
@@ -23,11 +23,19 @@
             text-align: center;
             color: #775928;
             margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .section-title {
+            color: #334537;
+            font-size: 1.3rem;
+            margin: 30px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e9e1d9;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 16px;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
         }
         .card {
             background: white;
@@ -37,103 +45,155 @@
             color: #334537;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
         }
-        .card h3 { font-size: 1.1rem; margin-bottom: 8px; }
-        .card p { font-size: 0.85rem; color: #737872; }
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .card h3 { font-size: 1rem; margin-bottom: 6px; }
+        .card p { font-size: 0.8rem; color: #737872; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🌻 汤姆的花园</h1>
         <p class="subtitle">Tom's Garden - 花园轻西餐厅</p>
+        
+        <h2 class="section-title">首页 & 导航</h2>
         <div class="grid">
             <a href="./_1/code.html" class="card">
+                <div class="card-icon">🏠</div>
                 <h3>首页</h3>
                 <p>Landing Page</p>
             </a>
+        </div>
+
+        <h2 class="section-title">功能页面</h2>
+        <div class="grid">
             <a href="./_2/code.html" class="card">
+                <div class="card-icon">🔍</div>
                 <h3>空间探索</h3>
-                <p>Space Exploration</p>
+                <p>Space</p>
             </a>
             <a href="./_3/code.html" class="card">
+                <div class="card-icon">📅</div>
                 <h3>立即预约</h3>
                 <p>Book Now</p>
             </a>
             <a href="./_4/code.html" class="card">
+                <div class="card-icon">ℹ️</div>
                 <h3>关于我们</h3>
                 <p>About Us</p>
             </a>
             <a href="./_5/code.html" class="card">
+                <div class="card-icon">📋</div>
                 <h3>菜单</h3>
                 <p>Menu</p>
             </a>
             <a href="./_6/code.html" class="card">
+                <div class="card-icon">🎉</div>
                 <h3>活动</h3>
                 <p>Events</p>
             </a>
             <a href="./_7/code.html" class="card">
+                <div class="card-icon">👤</div>
                 <h3>会员</h3>
                 <p>Membership</p>
             </a>
             <a href="./_8/code.html" class="card">
+                <div class="card-icon">🛒</div>
                 <h3>商店</h3>
                 <p>Shop</p>
             </a>
             <a href="./_9/code.html" class="card">
+                <div class="card-icon">🛍️</div>
                 <h3>购物车</h3>
                 <p>Cart</p>
             </a>
+        </div>
+
+        <h2 class="section-title">用户中心</h2>
+        <div class="grid">
             <a href="./_10/code.html" class="card">
+                <div class="card-icon">👥</div>
                 <h3>用户中心</h3>
-                <p>User Profile</p>
+                <p>Profile</p>
             </a>
             <a href="./_11/code.html" class="card">
+                <div class="card-icon">📦</div>
                 <h3>订单详情</h3>
-                <p>Order Details</p>
+                <p>Orders</p>
             </a>
             <a href="./_12/code.html" class="card">
+                <div class="card-icon">📍</div>
                 <h3>地址管理</h3>
                 <p>Addresses</p>
             </a>
             <a href="./_13/code.html" class="card">
+                <div class="card-icon">🎫</div>
                 <h3>优惠券</h3>
                 <p>Coupons</p>
             </a>
             <a href="./_14/code.html" class="card">
+                <div class="card-icon">💬</div>
                 <h3>客服</h3>
                 <p>Support</p>
             </a>
             <a href="./_15/code.html" class="card">
+                <div class="card-icon">⚙️</div>
                 <h3>设置</h3>
                 <p>Settings</p>
             </a>
+        </div>
+
+        <h2 class="section-title">法律 & 结算</h2>
+        <div class="grid">
             <a href="./_16/code.html" class="card">
+                <div class="card-icon">🔒</div>
                 <h3>隐私政策</h3>
-                <p>Privacy Policy</p>
+                <p>Privacy</p>
             </a>
             <a href="./_17/code.html" class="card">
+                <div class="card-icon">📜</div>
                 <h3>服务条款</h3>
-                <p>Terms of Service</p>
+                <p>Terms</p>
             </a>
             <a href="./_18/code.html" class="card">
+                <div class="card-icon">💳</div>
                 <h3>结算页</h3>
                 <p>Checkout</p>
             </a>
             <a href="./_19/code.html" class="card">
+                <div class="card-icon">✅</div>
                 <h3>支付成功</h3>
-                <p>Payment Success</p>
+                <p>Success</p>
             </a>
+        </div>
+
+        <h2 class="section-title">其他</h2>
+        <div class="grid">
             <a href="./_20/code.html" class="card">
+                <div class="card-icon">❓</div>
                 <h3>404页面</h3>
                 <p>Not Found</p>
             </a>
             <a href="./_21/code.html" class="card">
+                <div class="card-icon">⏳</div>
                 <h3>加载中</h3>
                 <p>Loading</p>
+            </a>
+            <a href="./activity_details/code.html" class="card">
+                <div class="card-icon">📝</div>
+                <h3>活动详情</h3>
+                <p>Activity</p>
             </a>
         </div>
     </div>
