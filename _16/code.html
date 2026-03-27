@@ -5,9 +5,9 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>汤姆的花园生活馆 - 养护预约</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Source+Han+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -98,7 +98,10 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+  <script src="../js/page-loader.js"></script>
+<script src="../js/api.js"></script>
+<script>window.addEventListener("DOMContentLoaded", async function() { await PageLoader.loadPageContent("maintenance", { updateTitle: true }); const f = document.querySelector("form"); if(f){f.addEventListener("submit",async(e)=>{e.preventDefault();const d={name:f.querySelector("input")?.value,phone:f.querySelectorAll("input")[1]?.value,description:f.querySelector("textarea")?.value};await PageLoader.submitLead("maintenance",d);});} });</script>
+</head>
 <body class="flex flex-col min-h-screen">
 <!-- TopAppBar -->
 <nav class="fixed top-0 left-0 right-0 z-50 bg-[#FCF9EF] dark:bg-stone-900">
