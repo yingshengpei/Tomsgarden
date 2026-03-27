@@ -75,3 +75,27 @@ window.PageLoader = {
 };
 
 console.log('✅ PageLoader loaded');
+// 导出各类API到全局
+window.storeAPI = {
+  getStores: () => apiCall('/store', { action: 'getStores' }),
+  getStoreDetail: (storeId) => apiCall('/store', { action: 'getStoreDetail', data: { storeId } })
+};
+
+window.supportAPI = {
+  createTicket: (data) => apiCall('/support', { action: 'createTicket', data }),
+  getTickets: (userId) => apiCall('/support', { action: 'getTickets', data: { userId } })
+};
+
+window.cartAPI = {
+  getCart: (userId) => apiCall('/cart', { action: 'getCart', data: { userId } }),
+  addToCart: (data) => apiCall('/cart', { action: 'addToCart', data }),
+  updateQuantity: (cartId, quantity) => apiCall('/cart', { action: 'updateQuantity', data: { cartId, quantity } }),
+  removeFromCart: (cartId) => apiCall('/cart', { action: 'removeFromCart', data: { cartId } })
+};
+
+window.orderAPI = {
+  createOrder: (data) => apiCall('/order', { action: 'createOrder', data }),
+  getOrders: (userId) => apiCall('/order', { action: 'getOrders', data: { userId } }),
+  getOrder: (orderId) => apiCall('/order', { action: 'getOrder', data: { orderId } }),
+  cancelOrder: (orderId, reason) => apiCall('/order', { action: 'cancelOrder', data: { orderId, reason } })
+};
