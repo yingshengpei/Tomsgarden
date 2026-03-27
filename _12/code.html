@@ -5,8 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>汤姆的花园 - 花园轻西餐</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -92,6 +92,16 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
+<script src="../js/api.js"></script>
+<script src="../js/page-loader.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", async function() {
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get("id") || "P001";
+  const result = await window.PageLoader.apiCall('/product', { action: 'getProduct', data: { productId } });
+  console.log("商品详情:", result);
+});
+</script>
 <body class="bg-surface text-on-surface min-h-screen pb-32">
 <!-- TopAppBar Standardized -->
 <header class="fixed top-0 w-full z-50 bg-[#fff8f2]/80 dark:bg-[#1e1b16]/80 backdrop-blur-md shadow-[0_4px_32px_rgba(30,27,22,0.04)]">
