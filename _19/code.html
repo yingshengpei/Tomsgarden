@@ -4,9 +4,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.0.0/noto-sans-sc.min.css" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -87,6 +87,15 @@
     }
   </style>
   </head>
+<script src="../js/api.js"></script>
+<script src="../js/page-loader.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", async function() {
+  const userId = "user123";
+  const result = await window.orderAPI.getOrders(userId);
+  console.log("订单列表:", result);
+});
+</script>
 <body class="font-body min-h-screen flex flex-col">
 <!-- TopAppBar -->
 <header class="bg-[#fff8f2] dark:bg-[#1e1b16] w-full top-0 z-50 shadow-[0_32px_32px_rgba(30,27,22,0.04)] sticky">
